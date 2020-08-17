@@ -10,3 +10,13 @@ function gooseFilter(birds) {
 	})
 	return filteredBirds
 }
+
+// Counting sheep...
+function countSheeps(arrayOfSheep) {
+	const amountOfSheep = arrayOfSheep.filter(function (sheep) {
+		if (sheep) {
+			return sheep
+		}
+	})
+	return amountOfSheep.length
+}

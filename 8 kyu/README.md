@@ -15,3 +15,16 @@ function gooseFilter(birds) {
 	return filteredBirds
 }
 ```
+
+### [Counting sheep...](https://www.codewars.com/kata/54edbc7200b811e956000556)
+
+```javascript
+function countSheeps(arrayOfSheep) {
+	const amountOfSheep = arrayOfSheep.filter(function (sheep) {
+		if (sheep) {
+			return sheep
+		}
+	})
+	return amountOfSheep.length
+}
+```
