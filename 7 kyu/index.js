@@ -8,3 +8,10 @@ function highAndLow(numbers) {
 function isSquare(n) {
 	return Math.sqrt(n) % 1 === 0
 }
+
+// Square Every Digit
+function squareDigits(num) {
+	return +Array.from(String(num), Number)
+		.map((val) => val ** 2)
+		.join("")
+}
