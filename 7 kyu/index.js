@@ -1,10 +1,5 @@
-# 7 Kyu
-
-### [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035)
-
-```javascript
+//Highest and Lowest
 function highAndLow(numbers) {
 	let sortedArr = numbers.split(" ").sort((num1, num2) => +num1 - +num2)
 	return sortedArr.slice(-1)[0] + " " + sortedArr[0]
 }
-```
