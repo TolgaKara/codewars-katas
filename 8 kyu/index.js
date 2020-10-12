@@ -35,3 +35,8 @@ function hello(name) {
 function greet(name) {
 	return `Hello, ${name} how are you doing today?`
 }
+
+// Grasshopper - Function syntax debugging
+function main(verb, noun) {
+	return verb + noun
+}
