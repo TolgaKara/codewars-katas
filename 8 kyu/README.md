@@ -28,3 +28,16 @@ function countSheeps(arrayOfSheep) {
 	return amountOfSheep.length
 }
 ```
+
+### [Hello, Name or World!](https://www.codewars.com/kata/57e3f79c9cb119374600046b)
+
+```javascript
+function hello(name) {
+	if (name === undefined || name.length === 0) {
+		name = "World"
+	}
+	name = name.toLowerCase()
+	name = name.charAt(0).toUpperCase() + name.slice(1)
+	return "Hello, " + name + "!"
+}
+```
