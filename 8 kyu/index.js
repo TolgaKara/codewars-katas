@@ -40,3 +40,8 @@ function greet(name) {
 function main(verb, noun) {
 	return verb + noun
 }
+
+// Grasshopper - Debug sayHello
+function sayHello(name) {
+	return `Hello, ${name}`
+}
