@@ -45,3 +45,14 @@ function main(verb, noun) {
 function sayHello(name) {
 	return `Hello, ${name}`
 }
+
+// Even or Odd
+function even_or_odd(number) {
+	let calcNumber = number % 2
+
+	if (calcNumber == 0) {
+		return "Even"
+	} else {
+		return "Odd"
+	}
+}

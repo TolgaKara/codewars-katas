@@ -65,3 +65,17 @@ function sayHello(name) {
 	return `Hello, ${name}`
 }
 ```
+
+### [Even or Odd](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe)
+
+```javascript
+function even_or_odd(number) {
+	let calcNumber = number % 2
+
+	if (calcNumber == 0) {
+		return "Even"
+	} else {
+		return "Odd"
+	}
+}
+```
