@@ -30,3 +30,8 @@ function hello(name) {
 	name = name.charAt(0).toUpperCase() + name.slice(1)
 	return "Hello, " + name + "!"
 }
+
+// Returning Strings
+function greet(name) {
+	return `Hello, ${name} how are you doing today?`
+}
