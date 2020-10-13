@@ -79,3 +79,12 @@ function positiveSum(arr) {
 var a = "code"
 var b = "wa.rs"
 var name = a + b
+
+// Simple Comparison?
+function add(a, b) {
+	if (a == b) {
+		return true
+	} else {
+		return false
+	}
+}

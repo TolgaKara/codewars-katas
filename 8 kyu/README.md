@@ -108,3 +108,15 @@ var a = "code"
 var b = "wa.rs"
 var name = a + b
 ```
+
+### [Simple Comparison?](https://www.codewars.com/kata/57f6ecdfcca6e045d2001207)
+
+```javascript
+function add(a, b) {
+	if (a == b) {
+		return true
+	} else {
+		return false
+	}
+}
+```
