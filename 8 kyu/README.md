@@ -120,3 +120,38 @@ function add(a, b) {
 	}
 }
 ```
+
+### [Area or Perimeter](https://www.codewars.com/kata/5ab6538b379d20ad880000ab)
+
+```javascript
+const areaOrPerimeter = function (l, w) {
+	if (l === w) {
+		return l * w
+	} else {
+		return 2 * (l + w)
+	}
+}
+```
+
+### [Total amount of points](https://www.codewars.com/kata/5bb904724c47249b10000131)
+
+```javascript
+function points(games) {
+	let sum = 0
+	for (let i = 0; i < games.length; i++) {
+		let x = parseInt(games[i][0])
+		let y = parseInt(games[i][2])
+
+		if (x > y) {
+			sum += 3
+		}
+		if (x < y) {
+			sum += 0
+		}
+		if (x == y) {
+			sum += 1
+		}
+	}
+	return sum
+}
+```
