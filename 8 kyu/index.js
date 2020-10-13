@@ -117,3 +117,14 @@ function points(games) {
 	}
 	return sum
 }
+
+// Smallest unused ID
+function nextId(ids) {
+	console.log(ids.length)
+	for (let i = 0; i < ids.length; i++) {
+		if (ids.indexOf(i) === -1) {
+			return i
+		}
+	}
+	return ids.length
+}
