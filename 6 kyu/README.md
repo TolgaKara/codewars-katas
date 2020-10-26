@@ -45,3 +45,18 @@ function longestRepetition(s) {
 	return [longestConsecutiveChar, longestLength]
 }
 ```
+
+[String transformer](https://www.codewars.com/kata/5878520d52628a092f0002d0)
+
+```javascript
+function stringTransformer(str) {
+	const allUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	return str
+		.split("")
+		.map((c) => (allUpperCase.indexOf(c) === -1 ? c.toUpperCase() : c.toLowerCase()))
+		.join("")
+		.split(" ")
+		.reverse()
+		.join(" ")
+}
+```
