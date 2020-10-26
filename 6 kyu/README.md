@@ -82,3 +82,23 @@ function getOrder(input) {
 	return output.join(" ")
 }
 ```
+
+[Find The Parity Outlier](https://www.codewars.com/kata/5526fc09a1bbd946250002dc)
+function findOutlier(integers){
+let evenNumbers = []
+let oddNumbers = []
+
+integers.filter((val) => {
+if(val % 2 === 0){
+evenNumbers.push(val)
+} else {
+oddNumbers.push(val)
+}
+})
+if(oddNumbers.length === 1){
+return oddNumbers[0]
+}
+if(evenNumbers.length === 1) {
+return evenNumbers[0]
+}
+}
