@@ -15,3 +15,11 @@ function squareDigits(num) {
 		.map((val) => val ** 2)
 		.join("")
 }
+
+// Shortest Word
+function findShort(s) {
+	return s
+		.split(" ")
+		.map((val) => val.length)
+		.sort((a, b) => a - b)[0]
+}

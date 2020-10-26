@@ -26,3 +26,14 @@ function squareDigits(num) {
 		.join("")
 }
 ```
+
+### [Shortest Word](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/)
+
+```javascript
+function findShort(s) {
+	return s
+		.split(" ")
+		.map((val) => val.length)
+		.sort((a, b) => a - b)[0]
+}
+```
