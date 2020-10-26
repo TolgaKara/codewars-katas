@@ -18,3 +18,30 @@ decodeMorse = function (morseCode) {
 	return solution.trim()
 }
 ```
+
+[Character with longest consecutive repetition](https://www.codewars.com/kata/586d6cefbcc21eed7a001155)
+
+```javascript
+function longestRepetition(s) {
+	let longestConsecutiveChar = ""
+	let longestLength = 0
+
+	for (let i = 0; i < s.length; i++) {
+		let newChar = s[i]
+		let count = 0
+
+		while (newChar === s[i]) {
+			count += 1
+			i += 1
+		}
+		i -= 1
+
+		if (count > longestLength) {
+			longestLength = count
+			longestConsecutiveChar = newChar
+		}
+	}
+
+	return [longestConsecutiveChar, longestLength]
+}
+```
