@@ -221,3 +221,24 @@ function likes(names) {
 	}
 }
 ```
+
+[Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836)
+
+```js
+function findOdd(A) {
+	let oddTimesNumber = 0
+	A.forEach((val) => {
+		let counter = 0
+		for (let i = 0; i < A.length; i++) {
+			if (val === A[i]) {
+				counter++
+			}
+		}
+
+		if (counter % 2 === 1) {
+			oddTimesNumber = val
+		}
+	})
+	return oddTimesNumber
+}
+```
