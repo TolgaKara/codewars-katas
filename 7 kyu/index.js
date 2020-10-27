@@ -37,3 +37,14 @@ function countZeros(n) {
 	}
 	return str.split("0").length - 1
 }
+
+// Get the Middle Character
+function getMiddle(s) {
+	let sArr = s.split("")
+	let middleInddex = s.length / 2
+	if (s.length % 2 == 0) {
+		return sArr[middleInddex - 1] + sArr[middleInddex]
+	} else {
+		return sArr[Math.floor(middleInddex)]
+	}
+}

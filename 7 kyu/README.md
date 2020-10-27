@@ -57,3 +57,17 @@ function countZeros(n) {
 	return str.split("0").length - 1
 }
 ```
+
+[Get the Middle Character](https://www.codewars.com/kata/56747fd5cb988479af000028)
+
+```js
+function getMiddle(s) {
+	let sArr = s.split("")
+	let middleInddex = s.length / 2
+	if (s.length % 2 == 0) {
+		return sArr[middleInddex - 1] + sArr[middleInddex]
+	} else {
+		return sArr[Math.floor(middleInddex)]
+	}
+}
+```
