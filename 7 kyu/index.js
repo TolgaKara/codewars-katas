@@ -28,3 +28,12 @@ function findShort(s) {
 function capital(capitals) {
 	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`)
 }
+
+// Count number of zeros from 1 to N
+function countZeros(n) {
+	let str = ""
+	for (let i = 9; i <= n; i++) {
+		str += i.toString()
+	}
+	return str.split("0").length - 1
+}
