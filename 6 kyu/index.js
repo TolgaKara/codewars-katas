@@ -90,3 +90,25 @@ function findOutlier(integers) {
 		return evenNumbers[0]
 	}
 }
+
+// More Zeros than Ones
+function moreZeros(s) {
+	let value = []
+	for (var i = 0; i < s.length; i++) {
+		let zeros = 0
+		let ones = 0
+		let sequence = s[i].charCodeAt(0).toString(2)
+		for (j = 0; j < sequence.length; j++) {
+			if (sequence[j] == 0) {
+				zeros += 1
+			} else {
+				ones += 1
+			}
+		}
+		if (zeros > ones) {
+			value.push(s[i])
+		}
+	}
+	let unique = [...new Set(value)]
+	return unique
+}

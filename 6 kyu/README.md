@@ -84,21 +84,49 @@ function getOrder(input) {
 ```
 
 [Find The Parity Outlier](https://www.codewars.com/kata/5526fc09a1bbd946250002dc)
-function findOutlier(integers){
-let evenNumbers = []
-let oddNumbers = []
 
-integers.filter((val) => {
-if(val % 2 === 0){
-evenNumbers.push(val)
-} else {
-oddNumbers.push(val)
+```js
+function findOutlier(integers) {
+	let evenNumbers = []
+	let oddNumbers = []
+
+	integers.filter((val) => {
+		if (val % 2 === 0) {
+			evenNumbers.push(val)
+		} else {
+			oddNumbers.push(val)
+		}
+	})
+	if (oddNumbers.length === 1) {
+		return oddNumbers[0]
+	}
+	if (evenNumbers.length === 1) {
+		return evenNumbers[0]
+	}
 }
-})
-if(oddNumbers.length === 1){
-return oddNumbers[0]
+```
+
+[More Zeros than Ones](https://www.codewars.com/kata/5d41e16d8bad42002208fe1a)
+
+```js
+function moreZeros(s) {
+	let value = []
+	for (var i = 0; i < s.length; i++) {
+		let zeros = 0
+		let ones = 0
+		let sequence = s[i].charCodeAt(0).toString(2)
+		for (j = 0; j < sequence.length; j++) {
+			if (sequence[j] == 0) {
+				zeros += 1
+			} else {
+				ones += 1
+			}
+		}
+		if (zeros > ones) {
+			value.push(s[i])
+		}
+	}
+	let unique = [...new Set(value)]
+	return unique
 }
-if(evenNumbers.length === 1) {
-return evenNumbers[0]
-}
-}
+```
