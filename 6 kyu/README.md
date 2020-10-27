@@ -149,3 +149,25 @@ function toCamelCase(string) {
 	}
 }
 ```
+
+[Simple frequency sort](https://www.codewars.com/kata/5a8d2bf60025e9163c0000bc)
+
+```js
+function solve(arr) {
+	let frequency = {}
+	for (let i = 0; i < arr.length; i++) {
+		if (frequency[arr[i]]) {
+			frequency[arr[i]]++
+		} else {
+			frequency[arr[i]] = 1
+		}
+	}
+	return arr.sort((a, b) => {
+		if (frequency[b] !== frequency[a]) {
+			return frequency[b] - frequency[a]
+		} else if (frequency[b] === frequency[a]) {
+			return a - b
+		}
+	})
+}
+```
