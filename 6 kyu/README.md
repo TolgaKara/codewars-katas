@@ -242,3 +242,21 @@ function findOdd(A) {
 	return oddTimesNumber
 }
 ```
+
+[Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091)
+
+```js
+function count(string) {
+	let splittedStringArray = string.split("")
+	let countedStrObj = {}
+	splittedStringArray.forEach(function (character) {
+		let count = 0
+		for (let j = 0; j < splittedStringArray.length; j++) {
+			if (character === splittedStringArray[j]) count++
+
+			countedStrObj[character] = count
+		}
+	})
+	return countedStrObj
+}
+```

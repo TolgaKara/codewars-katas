@@ -206,3 +206,18 @@ function findOdd(A) {
 	})
 	return oddTimesNumber
 }
+
+// Count characters in your string
+function count(string) {
+	let splittedStringArray = string.split("")
+	let countedStrObj = {}
+	splittedStringArray.forEach(function (character) {
+		let count = 0
+		for (let j = 0; j < splittedStringArray.length; j++) {
+			if (character === splittedStringArray[j]) count++
+
+			countedStrObj[character] = count
+		}
+	})
+	return countedStrObj
+}
