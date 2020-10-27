@@ -147,3 +147,16 @@ function solve(arr) {
 		}
 	})
 }
+
+// Build Tower
+function towerBuilder(nFloors) {
+	let spaces = []
+	let asteriks = []
+	let towers = []
+	for (i = 1; i <= nFloors; i++) {
+		spaces = " ".repeat(nFloors - i)
+		asteriks = "*".repeat(2 * i - 1)
+		towers.push(`${spaces}${asteriks}${spaces}`)
+	}
+	return towers
+}
