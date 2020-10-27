@@ -130,3 +130,22 @@ function moreZeros(s) {
 	return unique
 }
 ```
+
+[Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003)
+
+```js
+function toCamelCase(string) {
+	const cleanedString = string.split(/[-_]/g)
+	if (cleanedString[0].charAt(0) !== cleanedString[0].charAt(0).toUpperCase()) {
+		const result = cleanedString
+			.slice(1)
+			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		return [cleanedString[0], ...result].join("")
+	} else {
+		const result = cleanedString
+			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+			.join("")
+		return result
+	}
+}
+```
