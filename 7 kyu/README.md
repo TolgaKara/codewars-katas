@@ -37,3 +37,11 @@ function findShort(s) {
 		.sort((a, b) => a - b)[0]
 }
 ```
+
+### [Find the Capitals](https://www.codewars.com/kata/53573877d5493b4d6e00050c)
+
+```js
+function capital(capitals) {
+	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`)
+}
+```

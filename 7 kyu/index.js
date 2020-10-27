@@ -23,3 +23,8 @@ function findShort(s) {
 		.map((val) => val.length)
 		.sort((a, b) => a - b)[0]
 }
+
+// Find the Capitals
+function capital(capitals) {
+	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`)
+}
