@@ -221,3 +221,17 @@ function count(string) {
 	})
 	return countedStrObj
 }
+
+// Format a string of names like 'Bart, Lisa & Maggie'.
+function list(names) {
+	const lastNameIndex = names.length - 1
+
+	return names
+		.reduce((acc, val, index) => {
+			if (lastNameIndex === index && lastNameIndex > 0) {
+				return acc + " & " + val.name
+			}
+			return acc + ", " + val.name
+		}, "")
+		.slice(2)
+}
