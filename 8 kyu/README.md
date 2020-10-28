@@ -271,7 +271,7 @@ function sum(numbers) {
 }
 ```
 
-[DNA to RNA Conversion](https://www.codewars.com/kata/5556282156230d0e5e000089)
+### [DNA to RNA Conversion](https://www.codewars.com/kata/5556282156230d0e5e000089)
 
 ```js
 function DNAtoRNA(dna) {
@@ -282,7 +282,7 @@ function DNAtoRNA(dna) {
 }
 ```
 
-[Fake Binary](https://www.codewars.com/kata/57eae65a4321032ce000002d)
+### [Fake Binary](https://www.codewars.com/kata/57eae65a4321032ce000002d)
 
 ```js
 function fakeBin(x) {
@@ -290,5 +290,13 @@ function fakeBin(x) {
 		.split("")
 		.map((val) => (val < 5 ? 0 : 1))
 		.join("")
+}
+```
+
+### [Do I get a bonus?](https://www.codewars.com/kata/56f6ad906b88de513f000d96)
+
+```js
+function bonusTime(salary, bonus) {
+	return bonus ? "\u00A3" + salary.toString() + "0" : "\u00A3" + salary.toString()
 }
 ```

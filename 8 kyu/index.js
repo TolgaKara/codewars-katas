@@ -224,3 +224,8 @@ function fakeBin(x) {
 		.map((val) => (val < 5 ? 0 : 1))
 		.join("")
 }
+
+// Do I get a bonus?
+function bonusTime(salary, bonus) {
+	return bonus ? "\u00A3" + salary.toString() + "0" : "\u00A3" + salary.toString()
+}
