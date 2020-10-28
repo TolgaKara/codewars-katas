@@ -198,3 +198,13 @@ function getPlanetName(id) {
 
 	return name
 }
+
+// Sum Arrays
+function sum(numbers) {
+	if (numbers.length === 0) {
+		return 0
+	}
+	return numbers.reduce((acc, val) => {
+		return (acc += val)
+	}, 0)
+}
