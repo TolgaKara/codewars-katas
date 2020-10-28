@@ -144,3 +144,12 @@ function past(h, m, s) {
 	let second = 1000 * s
 	return hour + minute + second
 }
+
+// Find Maximum and Minimum Values of a List
+var min = function (list) {
+	return Math.min(...list)
+}
+
+var max = function (list) {
+	return Math.max(...list)
+}

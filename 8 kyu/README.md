@@ -191,3 +191,15 @@ function past(h, m, s) {
 	return hour + minute + second
 }
 ```
+
+[Find Maximum and Minimum Values of a List](https://www.codewars.com/kata/577a98a6ae28071780000989)
+
+```js
+var min = function (list) {
+	return Math.min(...list)
+}
+
+var max = function (list) {
+	return Math.max(...list)
+}
+```
