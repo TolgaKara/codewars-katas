@@ -216,3 +216,11 @@ function DNAtoRNA(dna) {
 		.map((val) => (val === "T" ? "U" : val))
 		.join("")
 }
+
+// Fake Binary
+function fakeBin(x) {
+	return x
+		.split("")
+		.map((val) => (val < 5 ? 0 : 1))
+		.join("")
+}
