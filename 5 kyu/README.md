@@ -22,7 +22,7 @@ function validParentheses(parens) {
 
 [Pete, the baker](https://www.codewars.com/kata/525c65e51bf619685c000059)
 
-`````js
+```js
 function cakes(recipe, available) {
 	let currentRecipe = Object.entries(recipe)
 	let storage = Object.entries(available)
@@ -42,5 +42,4 @@ function cakes(recipe, available) {
 	}
 	return Math.min(...possibleCakes)
 }
-;````
-`````
+```
