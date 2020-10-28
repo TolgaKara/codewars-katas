@@ -208,3 +208,11 @@ function sum(numbers) {
 		return (acc += val)
 	}, 0)
 }
+
+// DNA to RNA Conversion
+function DNAtoRNA(dna) {
+	return dna
+		.split("")
+		.map((val) => (val === "T" ? "U" : val))
+		.join("")
+}

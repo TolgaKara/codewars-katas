@@ -270,3 +270,14 @@ function sum(numbers) {
 	}, 0)
 }
 ```
+
+[DNA to RNA Conversion](https://www.codewars.com/kata/5556282156230d0e5e000089)
+
+```js
+function DNAtoRNA(dna) {
+	return dna
+		.split("")
+		.map((val) => (val === "T" ? "U" : val))
+		.join("")
+}
+```
