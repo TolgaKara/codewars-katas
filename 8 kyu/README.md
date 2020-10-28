@@ -180,3 +180,14 @@ function finalGrade(exam, projects) {
 	return 0
 }
 ```
+
+### [Beginner Series #2 Clock](https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a)
+
+```js
+function past(h, m, s) {
+	let hour = 3600000 * h
+	let minute = 60000 * m
+	let second = 1000 * s
+	return hour + minute + second
+}
+```

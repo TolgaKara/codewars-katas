@@ -136,3 +136,11 @@ function finalGrade(exam, projects) {
 	if ((exam > 50) & (projects >= 2)) return 75
 	return 0
 }
+
+// Beginner Series #2 Clock
+function past(h, m, s) {
+	let hour = 3600000 * h
+	let minute = 60000 * m
+	let second = 1000 * s
+	return hour + minute + second
+}
