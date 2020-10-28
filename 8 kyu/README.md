@@ -192,7 +192,7 @@ function past(h, m, s) {
 }
 ```
 
-[Find Maximum and Minimum Values of a List](https://www.codewars.com/kata/577a98a6ae28071780000989)
+### [Find Maximum and Minimum Values of a List](https://www.codewars.com/kata/577a98a6ae28071780000989)
 
 ```js
 var min = function (list) {
@@ -201,5 +201,15 @@ var min = function (list) {
 
 var max = function (list) {
 	return Math.max(...list)
+}
+```
+
+### [Are You Playing Banjo?](https://www.codewars.com/kata/53af2b8861023f1d88000832)
+
+```js
+function areYouPlayingBanjo(name) {
+	return name.toUpperCase().charAt(0) === "R"
+		? name + " plays banjo"
+		: name + " does not play banjo"
 }
 ```

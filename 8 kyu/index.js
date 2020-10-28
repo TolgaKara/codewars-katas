@@ -153,3 +153,10 @@ var min = function (list) {
 var max = function (list) {
 	return Math.max(...list)
 }
+
+// Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+	return name.toUpperCase().charAt(0) === "R"
+		? name + " plays banjo"
+		: name + " does not play banjo"
+}
