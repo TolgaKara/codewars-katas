@@ -160,3 +160,8 @@ function areYouPlayingBanjo(name) {
 		? name + " plays banjo"
 		: name + " does not play banjo"
 }
+
+// You only need one - Beginner
+function check(a, x) {
+	return a.includes(x)
+}
