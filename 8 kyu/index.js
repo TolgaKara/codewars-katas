@@ -234,3 +234,13 @@ function bonusTime(salary, bonus) {
 function doubleInteger(i) {
 	return i * 2
 }
+
+// Calculate average
+function find_average(array) {
+	return (
+		array.reduce((acc, val, index, { length }) => {
+			return (acc += val)
+		}, 0) / array.length
+	)
+	return 0
+}

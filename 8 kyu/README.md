@@ -308,3 +308,16 @@ function doubleInteger(i) {
 	return i * 2
 }
 ```
+
+### [Calculate average](https://www.codewars.com/kata/57a2013acf1fa5bfc4000921)
+
+```js
+function find_average(array) {
+	return (
+		array.reduce((acc, val, index, { length }) => {
+			return (acc += val)
+		}, 0) / array.length
+	)
+	return 0
+}
+```
