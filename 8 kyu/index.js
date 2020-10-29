@@ -229,3 +229,8 @@ function fakeBin(x) {
 function bonusTime(salary, bonus) {
 	return bonus ? "\u00A3" + salary.toString() + "0" : "\u00A3" + salary.toString()
 }
+
+// You Can't Code Under Pressure #1
+function doubleInteger(i) {
+	return i * 2
+}

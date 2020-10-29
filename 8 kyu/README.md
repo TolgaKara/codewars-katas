@@ -300,3 +300,11 @@ function bonusTime(salary, bonus) {
 	return bonus ? "\u00A3" + salary.toString() + "0" : "\u00A3" + salary.toString()
 }
 ```
+
+### [You Can't Code Under Pressure #1](https://www.codewars.com/kata/53ee5429ba190077850011d4)
+
+```js
+function doubleInteger(i) {
+	return i * 2
+}
+```
