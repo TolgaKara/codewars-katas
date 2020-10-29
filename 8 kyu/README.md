@@ -321,3 +321,15 @@ function find_average(array) {
 	return 0
 }
 ```
+
+### [Count the Monkeys!](https://www.codewars.com/kata/56f69d9f9400f508fb000ba7)
+
+```js
+function monkeyCount(n) {
+	let numberArr = []
+	for (let i = 1; i <= n; i++) {
+		numberArr.push(i)
+	}
+	return numberArr
+}
+```

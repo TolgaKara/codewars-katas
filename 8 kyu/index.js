@@ -244,3 +244,12 @@ function find_average(array) {
 	)
 	return 0
 }
+
+// Count the Monkeys!
+function monkeyCount(n) {
+	let numberArr = []
+	for (let i = 1; i <= n; i++) {
+		numberArr.push(i)
+	}
+	return numberArr
+}
