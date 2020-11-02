@@ -71,3 +71,17 @@ function getMiddle(s) {
 	}
 }
 ```
+
+[Jaden Casing Strings](https://www.codewars.com/kata/5390bac347d09b7da40006f6)
+
+```js
+String.prototype.toJadenCase = function () {
+	return this.toString()
+		.split(" ")
+		.map((val) => val[0].toUpperCase() + val.slice(1))
+		.join(" ")
+}
+
+var str = "How can mirrors be real if our eyes aren't real"
+var jadenStr = str.toJadenCase()
+```

@@ -48,3 +48,14 @@ function getMiddle(s) {
 		return sArr[Math.floor(middleInddex)]
 	}
 }
+
+// Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+	return this.toString()
+		.split(" ")
+		.map((val) => val[0].toUpperCase() + val.slice(1))
+		.join(" ")
+}
+
+var str = "How can mirrors be real if our eyes aren't real"
+var jadenStr = str.toJadenCase()
