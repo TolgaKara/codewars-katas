@@ -270,3 +270,8 @@ function abbrevName(name) {
 	let nameArr = name.split(" ")
 	return nameArr[0].slice(0, 1).toUpperCase() + "." + nameArr[1].slice(0, 1).toUpperCase()
 }
+
+// Beginner - Lost Without a Map
+function maps(x) {
+	return x.map((val) => val * 2)
+}

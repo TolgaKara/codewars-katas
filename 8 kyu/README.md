@@ -356,3 +356,11 @@ function abbrevName(name) {
 	return nameArr[0].slice(0, 1).toUpperCase() + "." + nameArr[1].slice(0, 1).toUpperCase()
 }
 ```
+
+[Beginner - Lost Without a Map](https://www.codewars.com/kata/57f781872e3d8ca2a000007e)
+
+```js
+function maps(x) {
+	return x.map((val) => val * 2)
+}
+```
