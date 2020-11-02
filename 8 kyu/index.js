@@ -275,3 +275,12 @@ function abbrevName(name) {
 function maps(x) {
 	return x.map((val) => val * 2)
 }
+
+// Jenny's secret message
+function greet(name) {
+	if (name === "Johnny") {
+		return "Hello, my love!"
+	} else {
+		return "Hello, " + name + "!"
+	}
+}

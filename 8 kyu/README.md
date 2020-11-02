@@ -364,3 +364,15 @@ function maps(x) {
 	return x.map((val) => val * 2)
 }
 ```
+
+[Jenny's secret message](https://www.codewars.com/kata/55225023e1be1ec8bc000390)
+
+```js
+function greet(name) {
+	if (name === "Johnny") {
+		return "Hello, my love!"
+	} else {
+		return "Hello, " + name + "!"
+	}
+}
+```
