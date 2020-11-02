@@ -264,3 +264,9 @@ function countPositivesSumNegatives(input) {
 
 	return [positives, negatives]
 }
+
+// Abbreviate a Two Word Name
+function abbrevName(name) {
+	let nameArr = name.split(" ")
+	return nameArr[0].slice(0, 1).toUpperCase() + "." + nameArr[1].slice(0, 1).toUpperCase()
+}
