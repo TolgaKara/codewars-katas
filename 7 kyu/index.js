@@ -1,19 +1,19 @@
 //Highest and Lowest
 function highAndLow(numbers) {
-	let sortedArr = numbers.split(" ").sort((num1, num2) => +num1 - +num2)
-	return sortedArr.slice(-1)[0] + " " + sortedArr[0]
+	let sortedArr = numbers.split(" ").sort((num1, num2) => +num1 - +num2);
+	return sortedArr.slice(-1)[0] + " " + sortedArr[0];
 }
 
 // You're a square!
 function isSquare(n) {
-	return Math.sqrt(n) % 1 === 0
+	return Math.sqrt(n) % 1 === 0;
 }
 
 // Square Every Digit
 function squareDigits(num) {
 	return +Array.from(String(num), Number)
 		.map((val) => val ** 2)
-		.join("")
+		.join("");
 }
 
 // Shortest Word
@@ -21,31 +21,31 @@ function findShort(s) {
 	return s
 		.split(" ")
 		.map((val) => val.length)
-		.sort((a, b) => a - b)[0]
+		.sort((a, b) => a - b)[0];
 }
 
 // Find the Capitals
 function capital(capitals) {
-	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`)
+	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`);
 }
 
 // Count number of zeros from 1 to N
 function countZeros(n) {
-	let str = ""
+	let str = "";
 	for (let i = 9; i <= n; i++) {
-		str += i.toString()
+		str += i.toString();
 	}
-	return str.split("0").length - 1
+	return str.split("0").length - 1;
 }
 
 // Get the Middle Character
 function getMiddle(s) {
-	let sArr = s.split("")
-	let middleInddex = s.length / 2
+	let sArr = s.split("");
+	let middleInddex = s.length / 2;
 	if (s.length % 2 == 0) {
-		return sArr[middleInddex - 1] + sArr[middleInddex]
+		return sArr[middleInddex - 1] + sArr[middleInddex];
 	} else {
-		return sArr[Math.floor(middleInddex)]
+		return sArr[Math.floor(middleInddex)];
 	}
 }
 
@@ -54,8 +54,8 @@ String.prototype.toJadenCase = function () {
 	return this.toString()
 		.split(" ")
 		.map((val) => val[0].toUpperCase() + val.slice(1))
-		.join(" ")
-}
+		.join(" ");
+};
 
-var str = "How can mirrors be real if our eyes aren't real"
-var jadenStr = str.toJadenCase()
+var str = "How can mirrors be real if our eyes aren't real";
+var jadenStr = str.toJadenCase();
