@@ -298,3 +298,12 @@ function digitize(n) {
 function century(year) {
 	return year % 100 === 0 ? year / 100 : Math.floor(year / 100 + 1);
 }
+
+// A Needle in the Haystack
+function findNeedle(haystack) {
+	for (let i = 0; i < haystack.length; i++) {
+		if (haystack[i] === "needle") {
+			return "found the needle at position " + i;
+		}
+	}
+}
