@@ -317,3 +317,8 @@ var stringToNumber = function (str) {
 function isDivisible(n, x, y) {
 	return n % x === 0 && n % y === 0;
 }
+
+// Keep Hydrated!
+function litres(time) {
+	return Math.floor(time * 0.5);
+}

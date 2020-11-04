@@ -424,3 +424,11 @@ function isDivisible(n, x, y) {
 	return n % x === 0 && n % y === 0;
 }
 ```
+
+[Keep Hydrated!](https://www.codewars.com/kata/582cb0224e56e068d800003c)
+
+```js
+function litres(time) {
+	return Math.floor(time * 0.5);
+}
+```
