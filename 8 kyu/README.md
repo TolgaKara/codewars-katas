@@ -409,10 +409,18 @@ function findNeedle(haystack) {
 }
 ```
 
-[Convert a String to a Number!]()
+[Convert a String to a Number!](https://www.codewars.com/kata/544675c6f971f7399a000e79)
 
 ```js
 var stringToNumber = function (str) {
 	return +str;
 };
+```
+
+[Is n divisible by x and y?](https://www.codewars.com/kata/5545f109004975ea66000086)
+
+```js
+function isDivisible(n, x, y) {
+	return n % x === 0 && n % y === 0;
+}
 ```
