@@ -408,3 +408,11 @@ function findNeedle(haystack) {
 	}
 }
 ```
+
+[Convert a String to a Number!]()
+
+```js
+var stringToNumber = function (str) {
+	return +str;
+};
+```
