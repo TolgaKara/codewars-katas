@@ -335,3 +335,12 @@ function basicOp(operation, value1, value2) {
 		return value1 / value2;
 	}
 }
+
+// Square(n) Sum
+function squareSum(numbers) {
+	let sum = 0;
+	numbers.forEach((num) => {
+		sum += num * num;
+	});
+	return sum;
+}

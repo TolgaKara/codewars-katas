@@ -448,3 +448,15 @@ function basicOp(operation, value1, value2) {
 	}
 }
 ```
+
+[Square n Sum](https://www.codewars.com/kata/515e271a311df0350d00000f)
+
+```js
+function squareSum(numbers) {
+	let sum = 0;
+	numbers.forEach((num) => {
+		sum += num * num;
+	});
+	return sum;
+}
+```
