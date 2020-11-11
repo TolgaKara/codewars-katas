@@ -354,3 +354,8 @@ function noSpace(x) {
 function boolToWord(bool) {
 	return bool ? "Yes" : "No";
 }
+
+// Reversed Strings
+function solution(str) {
+	return str.split("").reverse().join("");
+}
