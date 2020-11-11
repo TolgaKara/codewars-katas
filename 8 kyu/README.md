@@ -460,3 +460,11 @@ function squareSum(numbers) {
 	return sum;
 }
 ```
+
+[Remove String Spaces](https://www.codewars.com/kata/57eae20f5500ad98e50002c5)
+
+```js
+function noSpace(x) {
+	return x.split(" ").join("");
+}
+```
