@@ -349,3 +349,8 @@ function squareSum(numbers) {
 function noSpace(x) {
 	return x.split(" ").join("");
 }
+
+// Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord(bool) {
+	return bool ? "Yes" : "No";
+}
