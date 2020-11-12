@@ -2,47 +2,47 @@
 
 ```javascript
 decodeMorse = function (morseCode) {
-	morseCode = morseCode.split("   ")
-	solution = ""
+	morseCode = morseCode.split("   ");
+	solution = "";
 	for (let i = 0; i < morseCode.length; i++) {
-		word = morseCode[i]
-		word = word.split(" ")
+		word = morseCode[i];
+		word = word.split(" ");
 		for (let j = 0; j < word.length; j++) {
 			if (MORSE_CODE[word[j]] !== undefined) {
-				solution = solution + MORSE_CODE[word[j]]
+				solution = solution + MORSE_CODE[word[j]];
 			}
 		}
-		solution = solution + " "
+		solution = solution + " ";
 	}
 
-	return solution.trim()
-}
+	return solution.trim();
+};
 ```
 
 [Character with longest consecutive repetition](https://www.codewars.com/kata/586d6cefbcc21eed7a001155)
 
 ```javascript
 function longestRepetition(s) {
-	let longestConsecutiveChar = ""
-	let longestLength = 0
+	let longestConsecutiveChar = "";
+	let longestLength = 0;
 
 	for (let i = 0; i < s.length; i++) {
-		let newChar = s[i]
-		let count = 0
+		let newChar = s[i];
+		let count = 0;
 
 		while (newChar === s[i]) {
-			count += 1
-			i += 1
+			count += 1;
+			i += 1;
 		}
-		i -= 1
+		i -= 1;
 
 		if (count > longestLength) {
-			longestLength = count
-			longestConsecutiveChar = newChar
+			longestLength = count;
+			longestConsecutiveChar = newChar;
 		}
 	}
 
-	return [longestConsecutiveChar, longestLength]
+	return [longestConsecutiveChar, longestLength];
 }
 ```
 
@@ -50,14 +50,14 @@ function longestRepetition(s) {
 
 ```javascript
 function stringTransformer(str) {
-	const allUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	const allUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	return str
 		.split("")
 		.map((c) => (allUpperCase.indexOf(c) === -1 ? c.toUpperCase() : c.toLowerCase()))
 		.join("")
 		.split(" ")
 		.reverse()
-		.join(" ")
+		.join(" ");
 }
 ```
 
@@ -65,21 +65,21 @@ function stringTransformer(str) {
 
 ```js
 function getOrder(input) {
-	let menu = ["Burger", "Fries", "Chicken", "Pizza", "Sandwich", "Onionrings", "Milkshake", "Coke"]
-	let output = []
-	let currWord = ""
+	let menu = ["Burger", "Fries", "Chicken", "Pizza", "Sandwich", "Onionrings", "Milkshake", "Coke"];
+	let output = [];
+	let currWord = "";
 	for (let i = 0; i < input.length; i++) {
-		currWord += input[i]
-		let found = menu.findIndex((menuItem) => currWord === menuItem.toLowerCase())
+		currWord += input[i];
+		let found = menu.findIndex((menuItem) => currWord === menuItem.toLowerCase());
 		if (found > -1) {
-			output.push(menu[found])
-			currWord = ""
+			output.push(menu[found]);
+			currWord = "";
 		}
 	}
 	output.sort((a, b) => {
-		return menu.indexOf(a) - menu.indexOf(b)
-	})
-	return output.join(" ")
+		return menu.indexOf(a) - menu.indexOf(b);
+	});
+	return output.join(" ");
 }
 ```
 
@@ -87,21 +87,21 @@ function getOrder(input) {
 
 ```js
 function findOutlier(integers) {
-	let evenNumbers = []
-	let oddNumbers = []
+	let evenNumbers = [];
+	let oddNumbers = [];
 
 	integers.filter((val) => {
 		if (val % 2 === 0) {
-			evenNumbers.push(val)
+			evenNumbers.push(val);
 		} else {
-			oddNumbers.push(val)
+			oddNumbers.push(val);
 		}
-	})
+	});
 	if (oddNumbers.length === 1) {
-		return oddNumbers[0]
+		return oddNumbers[0];
 	}
 	if (evenNumbers.length === 1) {
-		return evenNumbers[0]
+		return evenNumbers[0];
 	}
 }
 ```
@@ -110,24 +110,24 @@ function findOutlier(integers) {
 
 ```js
 function moreZeros(s) {
-	let value = []
+	let value = [];
 	for (var i = 0; i < s.length; i++) {
-		let zeros = 0
-		let ones = 0
-		let sequence = s[i].charCodeAt(0).toString(2)
+		let zeros = 0;
+		let ones = 0;
+		let sequence = s[i].charCodeAt(0).toString(2);
 		for (j = 0; j < sequence.length; j++) {
 			if (sequence[j] == 0) {
-				zeros += 1
+				zeros += 1;
 			} else {
-				ones += 1
+				ones += 1;
 			}
 		}
 		if (zeros > ones) {
-			value.push(s[i])
+			value.push(s[i]);
 		}
 	}
-	let unique = [...new Set(value)]
-	return unique
+	let unique = [...new Set(value)];
+	return unique;
 }
 ```
 
@@ -135,17 +135,17 @@ function moreZeros(s) {
 
 ```js
 function toCamelCase(string) {
-	const cleanedString = string.split(/[-_]/g)
+	const cleanedString = string.split(/[-_]/g);
 	if (cleanedString[0].charAt(0) !== cleanedString[0].charAt(0).toUpperCase()) {
 		const result = cleanedString
 			.slice(1)
-			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-		return [cleanedString[0], ...result].join("")
+			.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+		return [cleanedString[0], ...result].join("");
 	} else {
 		const result = cleanedString
 			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-			.join("")
-		return result
+			.join("");
+		return result;
 	}
 }
 ```
@@ -154,21 +154,21 @@ function toCamelCase(string) {
 
 ```js
 function solve(arr) {
-	let frequency = {}
+	let frequency = {};
 	for (let i = 0; i < arr.length; i++) {
 		if (frequency[arr[i]]) {
-			frequency[arr[i]]++
+			frequency[arr[i]]++;
 		} else {
-			frequency[arr[i]] = 1
+			frequency[arr[i]] = 1;
 		}
 	}
 	return arr.sort((a, b) => {
 		if (frequency[b] !== frequency[a]) {
-			return frequency[b] - frequency[a]
+			return frequency[b] - frequency[a];
 		} else if (frequency[b] === frequency[a]) {
-			return a - b
+			return a - b;
 		}
-	})
+	});
 }
 ```
 
@@ -176,15 +176,15 @@ function solve(arr) {
 
 ```js
 function towerBuilder(nFloors) {
-	let spaces = []
-	let asteriks = []
-	let towers = []
+	let spaces = [];
+	let asteriks = [];
+	let towers = [];
 	for (i = 1; i <= nFloors; i++) {
-		spaces = " ".repeat(nFloors - i)
-		asteriks = "*".repeat(2 * i - 1)
-		towers.push(`${spaces}${asteriks}${spaces}`)
+		spaces = " ".repeat(nFloors - i);
+		asteriks = "*".repeat(2 * i - 1);
+		towers.push(`${spaces}${asteriks}${spaces}`);
 	}
-	return towers
+	return towers;
 }
 ```
 
@@ -192,15 +192,15 @@ function towerBuilder(nFloors) {
 
 ```js
 function solution(number) {
-	let ar = []
+	let ar = [];
 	for (let i = 1; i < number; i++) {
 		if (i % 3 === 0 || i % 5 === 0) {
-			ar.push(i)
+			ar.push(i);
 		}
 	}
 	return ar.reduce((acc, val) => {
-		return (acc += val)
-	}, 0)
+		return (acc += val);
+	}, 0);
 }
 ```
 
@@ -209,15 +209,15 @@ function solution(number) {
 ```js
 function likes(names) {
 	if (names.length === 0) {
-		return "no one likes this"
+		return "no one likes this";
 	} else if (names.length === 1) {
-		return names[0] + " likes this"
+		return names[0] + " likes this";
 	} else if (names.length === 2) {
-		return names[0] + " and " + names[1] + " like this"
+		return names[0] + " and " + names[1] + " like this";
 	} else if (names.length === 3) {
-		return names[0] + ", " + names[1] + " and " + names[2] + " like this"
+		return names[0] + ", " + names[1] + " and " + names[2] + " like this";
 	} else {
-		return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this"
+		return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
 	}
 }
 ```
@@ -226,20 +226,20 @@ function likes(names) {
 
 ```js
 function findOdd(A) {
-	let oddTimesNumber = 0
+	let oddTimesNumber = 0;
 	A.forEach((val) => {
-		let counter = 0
+		let counter = 0;
 		for (let i = 0; i < A.length; i++) {
 			if (val === A[i]) {
-				counter++
+				counter++;
 			}
 		}
 
 		if (counter % 2 === 1) {
-			oddTimesNumber = val
+			oddTimesNumber = val;
 		}
-	})
-	return oddTimesNumber
+	});
+	return oddTimesNumber;
 }
 ```
 
@@ -247,17 +247,17 @@ function findOdd(A) {
 
 ```js
 function count(string) {
-	let splittedStringArray = string.split("")
-	let countedStrObj = {}
+	let splittedStringArray = string.split("");
+	let countedStrObj = {};
 	splittedStringArray.forEach(function (character) {
-		let count = 0
+		let count = 0;
 		for (let j = 0; j < splittedStringArray.length; j++) {
-			if (character === splittedStringArray[j]) count++
+			if (character === splittedStringArray[j]) count++;
 
-			countedStrObj[character] = count
+			countedStrObj[character] = count;
 		}
-	})
-	return countedStrObj
+	});
+	return countedStrObj;
 }
 ```
 
@@ -265,15 +265,31 @@ function count(string) {
 
 ```js
 function list(names) {
-	const lastNameIndex = names.length - 1
+	const lastNameIndex = names.length - 1;
 
 	return names
 		.reduce((acc, val, index) => {
 			if (lastNameIndex === index && lastNameIndex > 0) {
-				return acc + " & " + val.name
+				return acc + " & " + val.name;
 			}
-			return acc + ", " + val.name
+			return acc + ", " + val.name;
 		}, "")
-		.slice(2)
+		.slice(2);
+}
+```
+
+### [Two Sum](https://www.codewars.com/kata/52c31f8e6605bcc646000082)
+
+```js
+function twoSum(numbers, target) {
+	let sum = 0;
+	let indexArr = [];
+	for (let i = 0; i < numbers.length; i++) {
+		for (let x = i + 1; x < numbers.length; x++) {
+			if (numbers[x] === target - numbers[i]) {
+				return [i, x];
+			}
+		}
+	}
 }
 ```
