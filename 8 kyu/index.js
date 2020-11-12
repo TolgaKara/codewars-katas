@@ -371,3 +371,13 @@ class SmallestIntegerFinder {
 		return args.sort((a, b) => a - b)[0];
 	}
 }
+
+// Return Negative
+
+function makeNegative(num) {
+	console.log(num);
+	if (num < 0) {
+		return num;
+	}
+	return -num;
+}
