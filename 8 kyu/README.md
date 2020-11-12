@@ -484,3 +484,11 @@ function solution(str) {
 	return str.split("").reverse().join("");
 }
 ```
+
+[Convert a Number to a String!](https://www.codewars.com/kata/5265326f5fda8eb1160004c8)
+
+```js
+function numberToString(num) {
+	return num.toString();
+}
+```
