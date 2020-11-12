@@ -381,3 +381,13 @@ function makeNegative(num) {
 	}
 	return -num;
 }
+
+// Opposite number
+
+function opposite(number) {
+	if (number < 0) {
+		return Math.abs(number);
+	} else {
+		return number * -1;
+	}
+}
