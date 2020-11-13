@@ -59,3 +59,32 @@ String.prototype.toJadenCase = function () {
 
 var str = "How can mirrors be real if our eyes aren't real";
 var jadenStr = str.toJadenCase();
+
+// Vowel Count
+function getCount(str) {
+	let vowelsCount = 0;
+	const vowels = ["a", "e", "i", "o", "u"];
+	let strArr = str.split("");
+
+	strArr.forEach((val) => {
+		if (vowels.includes(val)) {
+			vowelsCount += 1;
+		}
+		return vowelsCount;
+	});
+	return vowelsCount;
+}
+
+// Unlucky Days
+const date = new Date();
+date.getDay();
+
+function unluckyDays(year) {
+	let date;
+	let counter = 0;
+	for (let i = 1; i <= 12; i++) {
+		date = new Date(`${i}/13/${year}`);
+		if (date.getDay() === 5) counter++;
+	}
+	return counter;
+}

@@ -4,8 +4,8 @@
 
 ```javascript
 function highAndLow(numbers) {
-	let sortedArr = numbers.split(" ").sort((num1, num2) => +num1 - +num2)
-	return sortedArr.slice(-1)[0] + " " + sortedArr[0]
+	let sortedArr = numbers.split(" ").sort((num1, num2) => +num1 - +num2);
+	return sortedArr.slice(-1)[0] + " " + sortedArr[0];
 }
 ```
 
@@ -13,7 +13,7 @@ function highAndLow(numbers) {
 
 ```javascript
 function isSquare(n) {
-	return Math.sqrt(n) % 1 === 0
+	return Math.sqrt(n) % 1 === 0;
 }
 ```
 
@@ -23,7 +23,7 @@ function isSquare(n) {
 function squareDigits(num) {
 	return +Array.from(String(num), Number)
 		.map((val) => val ** 2)
-		.join("")
+		.join("");
 }
 ```
 
@@ -34,7 +34,7 @@ function findShort(s) {
 	return s
 		.split(" ")
 		.map((val) => val.length)
-		.sort((a, b) => a - b)[0]
+		.sort((a, b) => a - b)[0];
 }
 ```
 
@@ -42,7 +42,7 @@ function findShort(s) {
 
 ```js
 function capital(capitals) {
-	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`)
+	return capitals.map((c) => `The capital of ${c.state || c.country} is ${c.capital}`);
 }
 ```
 
@@ -50,11 +50,11 @@ function capital(capitals) {
 
 ```js
 function countZeros(n) {
-	let str = ""
+	let str = "";
 	for (let i = 9; i <= n; i++) {
-		str += i.toString()
+		str += i.toString();
 	}
-	return str.split("0").length - 1
+	return str.split("0").length - 1;
 }
 ```
 
@@ -62,12 +62,12 @@ function countZeros(n) {
 
 ```js
 function getMiddle(s) {
-	let sArr = s.split("")
-	let middleInddex = s.length / 2
+	let sArr = s.split("");
+	let middleInddex = s.length / 2;
 	if (s.length % 2 == 0) {
-		return sArr[middleInddex - 1] + sArr[middleInddex]
+		return sArr[middleInddex - 1] + sArr[middleInddex];
 	} else {
-		return sArr[Math.floor(middleInddex)]
+		return sArr[Math.floor(middleInddex)];
 	}
 }
 ```
@@ -79,9 +79,45 @@ String.prototype.toJadenCase = function () {
 	return this.toString()
 		.split(" ")
 		.map((val) => val[0].toUpperCase() + val.slice(1))
-		.join(" ")
-}
+		.join(" ");
+};
 
-var str = "How can mirrors be real if our eyes aren't real"
-var jadenStr = str.toJadenCase()
+var str = "How can mirrors be real if our eyes aren't real";
+var jadenStr = str.toJadenCase();
 ```
+
+[Vowel Count](https://www.codewars.com/kata/54ff3102c1bad923760001f3)
+
+```js
+function getCount(str) {
+	let vowelsCount = 0;
+	const vowels = ["a", "e", "i", "o", "u"];
+	let strArr = str.split("");
+
+	strArr.forEach((val) => {
+		if (vowels.includes(val)) {
+			vowelsCount += 1;
+		}
+		return vowelsCount;
+	});
+	return vowelsCount;
+}
+```
+
+[Unlucky Days](https://www.codewars.com/kata/56eb0be52caf798c630013c0)
+
+`````js
+const date = new Date();
+date.getDay();
+
+function unluckyDays(year) {
+	let date;
+	let counter = 0;
+	for (let i = 1; i <= 12; i++) {
+		date = new Date(`${i}/13/${year}`);
+		if (date.getDay() === 5) counter++;
+	}
+	return counter;
+}
+````;
+`````
