@@ -293,3 +293,20 @@ function twoSum(numbers, target) {
 	}
 }
 ```
+
+### [Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3)
+
+```js
+function cleanString(s) {
+	s = s.split("");
+	for (let i = 0; i < s.length; i++) {
+		if (s[i] === "#") {
+			s[i] = "";
+			s[i - 1] = "";
+			s = s.filter((v) => v !== "");
+			i -= 2;
+		}
+	}
+	return s.join("");
+}
+```
