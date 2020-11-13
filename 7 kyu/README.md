@@ -120,3 +120,21 @@ function unluckyDays(year) {
 	return counter;
 }
 ```
+
+[Filter Coffee](https://www.codewars.com/kata/56069d0c4af7f633910000d3)
+
+```js
+function search(budget, prices) {
+	if (budget === 0) {
+		return "";
+	}
+	let sortedPrices = prices.sort((a, b) => a - b);
+	let affordables = [];
+	sortedPrices.forEach((val, index) => {
+		if (budget >= val) {
+			affordables.push(val);
+		}
+	});
+	return affordables.join(",");
+}
+```
