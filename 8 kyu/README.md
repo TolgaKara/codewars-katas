@@ -517,7 +517,7 @@ function makeNegative(num) {
 
 [Opposite number](https://www.codewars.com/kata/56dec885c54a926dcd001095)
 
-`````js
+```js
 function opposite(number) {
 if (number < 0) {
 return Math.abs(number);
@@ -525,4 +525,25 @@ return Math.abs(number);
 return number \* -1;
 }
 }
-`````
+```
+
+[Grasshopper - Object syntax debug](https://www.codewars.com/kata/56d8ae9237123036d3001b54)
+
+```js
+var rooms = {
+	first: {
+		description: "This is the first room",
+		items: {
+			chair: "The old chair looks comfortable",
+			lamp: "This lamp looks ancient",
+		},
+	},
+	second: {
+		description: "This is the second room",
+		items: {
+			couch: "This couch looks like it would hurt your back",
+			table: "On the table there is an unopened bottle of water",
+		},
+	},
+};
+```
