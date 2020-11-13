@@ -415,3 +415,13 @@ function addFive(num) {
 	var total = num + 5;
 	return total;
 }
+
+// Grasshopper - Terminal Game Turn Function
+function doTurn() {
+	rollDice();
+	move();
+	combat();
+	getCoins();
+	buyHealth();
+	printStatus();
+}
