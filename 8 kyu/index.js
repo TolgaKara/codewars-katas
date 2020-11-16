@@ -452,3 +452,9 @@ function getGrade(s1, s2, s3) {
 		return "F";
 	}
 }
+
+// Grasshopper - Terminal game combat function
+function combat(health, damage) {
+	let currentHealth = health - damage;
+	return currentHealth < 0 ? 0 : currentHealth;
+}
