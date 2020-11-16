@@ -569,3 +569,17 @@ function doTurn() {
 	printStatus();
 }
 ```
+
+[Grasshopper - Terminal Game #1](https://www.codewars.com/kata/55e8aba23d399a59500000ce)
+
+```js
+function Hero(name) {
+	return {
+		name: name || "Hero",
+		position: "00",
+		health: 100,
+		damage: 5,
+		experience: 0,
+	};
+}
+```
