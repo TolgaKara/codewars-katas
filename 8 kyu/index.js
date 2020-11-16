@@ -458,3 +458,8 @@ function combat(health, damage) {
 	let currentHealth = health - damage;
 	return currentHealth < 0 ? 0 : currentHealth;
 }
+
+// Grasshopper - Terminal game move function
+function move(position, roll) {
+	return position + roll * 2;
+}
