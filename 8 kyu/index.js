@@ -477,3 +477,12 @@ var summation = function (num) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 	return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+
+// Grasshopper - Personalized Message
+function greet(name, owner) {
+	if (name === owner) {
+		return "Hello boss";
+	} else {
+		return "Hello guest";
+	}
+}

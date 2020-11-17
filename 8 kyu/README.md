@@ -639,3 +639,15 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 	return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 ```
+
+[Grasshopper - Personalized Message](https://www.codewars.com/kata/5772da22b89313a4d50012f7)
+
+```js
+function greet(name, owner) {
+	if (name === owner) {
+		return "Hello boss";
+	} else {
+		return "Hello guest";
+	}
+}
+```
