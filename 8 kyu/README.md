@@ -651,3 +651,16 @@ function greet(name, owner) {
 	}
 }
 ```
+
+[Grasshopper - Check for factor](https://www.codewars.com/kata/55cbc3586671f6aa070000fb)
+
+```js
+function checkForFactor(base, factor) {
+	let multipliedFactor = base * factor;
+	if (base % factor === 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+```

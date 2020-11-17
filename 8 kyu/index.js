@@ -486,3 +486,13 @@ function greet(name, owner) {
 		return "Hello guest";
 	}
 }
+
+// Grasshopper - Check for factor
+function checkForFactor(base, factor) {
+	let multipliedFactor = base * factor;
+	if (base % factor === 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
