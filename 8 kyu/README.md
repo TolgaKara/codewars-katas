@@ -689,3 +689,25 @@ let combineNames = (firstName, lastName) => {
 	return `${firstName} ${lastName}`;
 };
 ```
+
+[Grasshopper - Create the rooms](https://www.codewars.com/kata/56a29b237e9e997ff2000048)
+
+```js
+var rooms = {
+	firstRoom: {
+		name: "Dunkele Kammer 1",
+		description: "Baby level",
+		completed: true,
+	},
+	secRoom: {
+		name: "Dunkele Kammer 2",
+		description: "Adult level",
+		completed: false,
+	},
+	thirdRoom: {
+		name: "Dunkele Kammer 3",
+		description: "Grand level",
+		completed: false,
+	},
+};
+```

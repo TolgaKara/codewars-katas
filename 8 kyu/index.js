@@ -512,3 +512,22 @@ var name = a + b;
 let combineNames = (firstName, lastName) => {
 	return `${firstName} ${lastName}`;
 };
+
+// Grasshopper - Create the rooms
+var rooms = {
+	firstRoom: {
+		name: "Dunkele Kammer 1",
+		description: "Baby level",
+		completed: true,
+	},
+	secRoom: {
+		name: "Dunkele Kammer 2",
+		description: "Adult level",
+		completed: false,
+	},
+	thirdRoom: {
+		name: "Dunkele Kammer 3",
+		description: "Grand level",
+		completed: false,
+	},
+};
