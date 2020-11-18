@@ -681,3 +681,11 @@ var a = "dev";
 var b = "Lab";
 var name = a + b;
 ```
+
+[Grasshopper - Combine strings](https://www.codewars.com/kata/55f73f66d160f1f1db000059)
+
+```js
+let combineNames = (firstName, lastName) => {
+	return `${firstName} ${lastName}`;
+};
+```

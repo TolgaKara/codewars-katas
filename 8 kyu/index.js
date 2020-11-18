@@ -507,3 +507,8 @@ function greet() {
 var a = "dev";
 var b = "Lab";
 var name = a + b;
+
+// Grasshopper - Combine strings
+let combineNames = (firstName, lastName) => {
+	return `${firstName} ${lastName}`;
+};
