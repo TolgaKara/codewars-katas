@@ -673,3 +673,11 @@ function greet() {
 	return "hello world!";
 }
 ```
+
+[Grasshopper - Variable Assignment Debug](https://www.codewars.com/kata/5612e743cab69fec6d000077)
+
+```js
+var a = "dev";
+var b = "Lab";
+var name = a + b;
+```
