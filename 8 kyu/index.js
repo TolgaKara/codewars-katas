@@ -566,7 +566,6 @@ function parseF(s) {
 }
 
 // Mumbling
-
 function accum(s) {
 	s = s.split("");
 	return s
@@ -577,3 +576,10 @@ function accum(s) {
 		}, s[0].toUpperCase())
 		.slice(0, -1);
 }
+
+// Grasshopper - Messi Goals
+const laLigaGoals = 43;
+const championsLeagueGoals = 10;
+const copaDelReyGoals = 5;
+let totalGoals = 0;
+totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;

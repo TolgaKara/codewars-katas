@@ -764,3 +764,14 @@ function accum(s) {
 		.slice(0, -1);
 }
 ```
+
+[Grasshopper - Messi Goals](https://www.codewars.com/kata/55ca77fa094a2af31f00002a)
+
+```js
+const laLigaGoals = 43;
+const championsLeagueGoals = 10;
+const copaDelReyGoals = 5;
+
+let totalGoals = 0;
+totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+```
