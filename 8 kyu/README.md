@@ -814,3 +814,19 @@ function correct(string) {
 	return string;
 }
 ```
+
+[Removing Elements](https://www.codewars.com/kata/5769b3802ae6f8e4890009d2)
+
+```js
+function removeEveryOther(arr) {
+	let counter = 0;
+	for (let i = 0; i < arr.length; i++) {
+		if (counter >= 1) {
+			arr.splice(i, 1);
+			counter = 0;
+		}
+		counter++;
+	}
+	return arr;
+}
+```
