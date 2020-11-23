@@ -600,3 +600,17 @@ function repeatStr(n, s) {
 	}
 	return newString;
 }
+
+// Correct the mistakes of the character recognition software
+
+function correct(string) {
+	string = string.replace(/5|0|1/g, (matchedLetter) => {
+		if (matchedLetter === "5") {
+			return "S";
+		} else if (matchedLetter === "0") {
+			return "O";
+		}
+		return "I";
+	});
+	return string;
+}
