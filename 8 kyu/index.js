@@ -591,3 +591,12 @@ function cockroachSpeed(s) {
 	}
 	return Math.floor(s / 0.036);
 }
+
+// String repeat
+function repeatStr(n, s) {
+	let newString = "";
+	for (let i = 0; i < n; i++) {
+		newString += s;
+	}
+	return newString;
+}
