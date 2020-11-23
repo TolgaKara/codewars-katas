@@ -262,3 +262,16 @@ function cleanString(s) {
 	}
 	return s.join("");
 }
+
+// Does my number look big in this?
+
+function narcissistic(value) {
+	return (
+		value
+			.toString()
+			.split("")
+			.reduce((sum, number, index, { length }) => {
+				return sum + Math.pow(number, length);
+			}, 0) == value
+	);
+}

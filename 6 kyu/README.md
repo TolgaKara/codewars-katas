@@ -310,3 +310,18 @@ function cleanString(s) {
 	return s.join("");
 }
 ```
+
+### [Does my number look big in this?](https://www.codewars.com/kata/5287e858c6b5a9678200083c)
+
+```js
+function narcissistic(value) {
+	return (
+		value
+			.toString()
+			.split("")
+			.reduce((sum, number, index, { length }) => {
+				return sum + Math.pow(number, length);
+			}, 0) == value
+	);
+}
+```
