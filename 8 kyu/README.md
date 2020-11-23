@@ -749,3 +749,18 @@ function parseF(s) {
 	return parseFloat(s) || null;
 }
 ```
+
+[Mumbling](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039)
+
+```js
+function accum(s) {
+	s = s.split("");
+	return s
+		.reduce((acc, val, index) => {
+			let lowerRepeatStr = val.toLowerCase().repeat(index);
+			acc += lowerRepeatStr.charAt(0).toUpperCase() + lowerRepeatStr.slice(0) + "-";
+			return acc;
+		}, s[0].toUpperCase())
+		.slice(0, -1);
+}
+```
