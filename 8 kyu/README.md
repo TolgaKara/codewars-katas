@@ -738,3 +738,14 @@ function greet(language) {
 	return database[language] || database["english"];
 }
 ```
+
+[Parse float](https://www.codewars.com/kata/57a386117cb1f31890000039)
+
+```js
+function parseF(s) {
+	if (parseFloat(s) === 0) {
+		return 0;
+	}
+	return parseFloat(s) || null;
+}
+```

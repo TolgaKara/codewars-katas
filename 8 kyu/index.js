@@ -556,3 +556,11 @@ function greet(language) {
 	};
 	return database[language] || database["english"];
 }
+
+// Parse float
+function parseF(s) {
+	if (parseFloat(s) === 0) {
+		return 0;
+	}
+	return parseFloat(s) || null;
+}
