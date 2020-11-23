@@ -583,3 +583,11 @@ const championsLeagueGoals = 10;
 const copaDelReyGoals = 5;
 let totalGoals = 0;
 totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+// Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+	if (s === 0) {
+		return 0;
+	}
+	return Math.floor(s / 0.036);
+}

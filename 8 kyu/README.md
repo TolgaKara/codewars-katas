@@ -775,3 +775,14 @@ const copaDelReyGoals = 5;
 let totalGoals = 0;
 totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 ```
+
+[Beginner Series #4 Cockroach](https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6)
+
+```js
+function cockroachSpeed(s) {
+	if (s === 0) {
+		return 0;
+	}
+	return Math.floor(s / 0.036);
+}
+```
