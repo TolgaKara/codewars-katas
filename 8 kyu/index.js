@@ -645,3 +645,12 @@ function yourFutureCareer() {
 	}
 }
 yourFutureCareer();
+
+// Filling an array (part 1)
+const arr = (N) => {
+	const emptyArr = [];
+	for (let i = 0; i < N; i++) {
+		emptyArr[i] = i;
+	}
+	return emptyArr;
+};

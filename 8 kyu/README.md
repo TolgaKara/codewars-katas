@@ -854,3 +854,15 @@ function yourFutureCareer() {
 }
 yourFutureCareer();
 ```
+
+[Filling an array (part 1)](https://www.codewars.com/kata/571d42206414b103dc0006a1)
+
+```js
+const arr = (N) => {
+	const emptyArr = [];
+	for (let i = 0; i < N; i++) {
+		emptyArr[i] = i;
+	}
+	return emptyArr;
+};
+```
