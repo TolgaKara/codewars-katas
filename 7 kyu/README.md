@@ -214,3 +214,12 @@ var orderedCount = (text) => {
 	return finalRes;
 };
 ```
+
+[The Office VI - Sabbatical](https://www.codewars.com/kata/57fe50d000d05166720000b1)
+
+```js
+function sabb(x, val, happ) {
+	x = (x.match(/[sabticl]/gi) || []).length;
+	return x + val + happ > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
+}
+```
