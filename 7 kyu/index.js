@@ -188,3 +188,16 @@ function divCon(x) {
 	});
 	return (sumIntNumber -= sumStrNumber);
 }
+
+// Most sales
+function top3(products, amounts, prices) {
+	let emptyArr = [];
+	let revenue = products.map((v, i) => {
+		return prices[i] * amounts[i];
+	});
+	for (let i = 0; i < 3; i++) {
+		emptyArr.push(products[revenue.indexOf(Math.max(...revenue))]);
+		revenue[revenue.indexOf(Math.max(...revenue))] = -1;
+	}
+	return emptyArr;
+}
