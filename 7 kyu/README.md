@@ -223,3 +223,20 @@ function sabb(x, val, happ) {
 	return x + val + happ > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
 }
 ```
+
+[Divide and Conquer](https://www.codewars.com/kata/57eaec5608fed543d6000021)
+
+```js
+function divCon(x) {
+	let sumIntNumber = 0;
+	let sumStrNumber = 0;
+	x.forEach((number) => {
+		if (typeof number === "string") {
+			sumStrNumber += parseInt(number);
+		} else {
+			sumIntNumber += number;
+		}
+	});
+	return (sumIntNumber -= sumStrNumber);
+}
+```

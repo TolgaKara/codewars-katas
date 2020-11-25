@@ -174,3 +174,17 @@ function sabb(x, val, happ) {
 	x = (x.match(/[sabticl]/gi) || []).length;
 	return x + val + happ > 22 ? "Sabbatical! Boom!" : "Back to your desk, boy.";
 }
+
+// Divide and Conquer
+function divCon(x) {
+	let sumIntNumber = 0;
+	let sumStrNumber = 0;
+	x.forEach((number) => {
+		if (typeof number === "string") {
+			sumStrNumber += parseInt(number);
+		} else {
+			sumIntNumber += number;
+		}
+	});
+	return (sumIntNumber -= sumStrNumber);
+}
