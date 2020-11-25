@@ -154,3 +154,19 @@ function distinctDigitYear(year) {
 	return year;
 }
 ```
+
+[Simple Fun #144: Distinct Digit Year](https://www.codewars.com/kata/58aa68605aab54a26c0001a6)
+
+```js
+function distinctDigitYear(year) {
+	let totalDigit = 1;
+	let uniqueDigit = 2;
+
+	while (totalDigit != uniqueDigit) {
+		year++;
+		totalDigit = year.toString().length;
+		uniqueDigit = new Set(year.toString()).size;
+	}
+	return year;
+}
+```

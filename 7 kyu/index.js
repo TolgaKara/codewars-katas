@@ -117,3 +117,16 @@ function distinctDigitYear(year) {
 	}
 	return year;
 }
+
+// Simple Fun #144: Distinct Digit Year
+function distinctDigitYear(year) {
+	let totalDigit = 1;
+	let uniqueDigit = 2;
+
+	while (totalDigit != uniqueDigit) {
+		year++;
+		totalDigit = year.toString().length;
+		uniqueDigit = new Set(year.toString()).size;
+	}
+	return year;
+}
