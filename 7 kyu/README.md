@@ -170,3 +170,22 @@ function distinctDigitYear(year) {
 	return year;
 }
 ```
+
+[Find all pairs](https://www.codewars.com/kata/5c55ad8c9d76d41a62b4ede3)
+
+```js
+function duplicates(array) {
+	//Make the magic happen
+	let pairsNumber = [];
+	let pairCounter = 0;
+	array.forEach((num) => {
+		if (pairsNumber[num] !== num) {
+			pairsNumber[num] = num;
+		} else {
+			pairsNumber[num] = undefined;
+			pairCounter++;
+		}
+	});
+	return pairCounter;
+}
+```
