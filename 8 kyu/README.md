@@ -874,3 +874,15 @@ function capitalizeWord(word) {
 	return word[0].toUpperCase() + word.slice(1);
 }
 ```
+
+[Get the mean of an array](https://www.codewars.com/kata/563e320cee5dddcf77000158)
+
+```js
+function getAverage(marks) {
+	let sumArr = marks.reduce((acc, val) => {
+		return (acc += val);
+	}, 0);
+
+	return Math.floor(sumArr / marks.length);
+}
+```
