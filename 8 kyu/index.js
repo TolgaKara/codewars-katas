@@ -680,3 +680,12 @@ function convertToCelsius(temperature) {
 	var celsius = (temperature - 32) * (5 / 9);
 	return celsius;
 }
+
+// Grasshopper - If/else syntax debug
+function checkAlive(health) {
+	if (health > 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
