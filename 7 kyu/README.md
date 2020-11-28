@@ -256,3 +256,23 @@ function top3(products, amounts, prices) {
 	return emptyArr;
 }
 ```
+
+[Credit Card Mask](https://www.codewars.com/kata/5412509bd436bd33920011bc)
+
+```js
+function maskify(cc) {
+	let lengthOfCC = cc.length;
+	if (lengthOfCC === 0) {
+		return "";
+	} else if (lengthOfCC === 1) {
+		return cc;
+	} else {
+		let firstXNumber = cc.slice(0, -4).split("");
+		let newHashNumber = "";
+		for (let x of firstXNumber) {
+			newHashNumber += "#";
+		}
+		return newHashNumber + cc.slice(-4);
+	}
+}
+```
