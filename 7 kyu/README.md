@@ -383,3 +383,29 @@ const getTurkishNumber = (num) => {
   return word
 }
 `````
+
+[The Office I - Outed](https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1)
+
+```js
+function outed(meet, boss) {
+	let sum = 0;
+	let count = Object.keys(meet).length;
+
+	for (let key in meet) {
+		if (key === boss) {
+			sum += meet[key] * 2;
+		} else {
+			sum += meet[key];
+		}
+	}
+
+	let mean = sum / count;
+	console.log(mean);
+
+	if (mean <= 5) {
+		return "Get Out Now!";
+	} else {
+		return "Nice Work Champ!";
+	}
+}
+```
