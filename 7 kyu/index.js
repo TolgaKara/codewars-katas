@@ -218,3 +218,15 @@ function maskify(cc) {
 		return newHashNumber + cc.slice(-4);
 	}
 }
+
+// The Office III - Broken Photocopier
+function broken(x) {
+	let newBinNumber = x.split("").map((binNumber) => {
+		if (+binNumber === 1) {
+			return 0;
+		} else {
+			return 1;
+		}
+	});
+	return newBinNumber.join("");
+}

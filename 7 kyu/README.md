@@ -276,3 +276,18 @@ function maskify(cc) {
 	}
 }
 ```
+
+[The Office III - Broken Photocopier](https://www.codewars.com/kata/57ed56657b45ef922300002b)
+
+```js
+function broken(x) {
+	let newBinNumber = x.split("").map((binNumber) => {
+		if (+binNumber === 1) {
+			return 0;
+		} else {
+			return 1;
+		}
+	});
+	return newBinNumber.join("");
+}
+```
