@@ -339,3 +339,33 @@ function outed(meet, boss) {
 		return "Nice Work Champ!";
 	}
 }
+
+// Pandemia 🌡️
+function infected(s) {
+	s = s.split("X");
+
+	let totalInf = 0;
+	let totalPeop = 0;
+	let emptyArr = [];
+	for (let i = 0; i < s.length; i++) {
+		if (s[i].includes("1")) {
+			emptyArr.push(s[i].replace(/0/g, "1"));
+			totalInf += s[i].length;
+		} else {
+			emptyArr.push(s[i]);
+			totalPeop += s[i].length;
+		}
+	}
+	totalPeop += totalInf;
+	let newStr = emptyArr.join("X");
+
+	if (Object.is(NaN, (totalInf / totalPeop) * 100)) {
+		return 0;
+	}
+
+	return (totalInf / totalPeop) * 100;
+}
+
+infected("01000000X000X011X0X");
+infected("01X000X010X011XX");
+infected("XXXXX");

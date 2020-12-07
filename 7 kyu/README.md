@@ -409,3 +409,31 @@ function outed(meet, boss) {
 	}
 }
 ```
+
+[Pandemia 🌡️](https://www.codewars.com/kata/5e2596a9ad937f002e510435)
+
+````js
+function infected(s) {
+  s = s.split('X')
+
+  let totalInf = 0
+  let totalPeop = 0
+  let emptyArr = []
+  for(let i = 0; i < s.length; i++){
+    if(s[i].includes('1')){
+      emptyArr.push(s[i].replace(/0/g, '1'));
+      totalInf += s[i].length
+    }else{
+      emptyArr.push(s[i])
+      totalPeop += s[i].length
+    }
+  }
+  totalPeop += totalInf
+  let newStr = emptyArr.join('X')
+  ```alPeop * 100
+}
+
+infected("01000000X000X011X0X")
+infected("01X000X010X011XX")
+infected("XXXXX")
+````
