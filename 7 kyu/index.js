@@ -230,3 +230,36 @@ function broken(x) {
 	});
 	return newBinNumber.join("");
 }
+
+// The Office II - Boredom Score
+function boredom(staff) {
+	let boredomScoreByJob = {
+		accounts: 1,
+		finance: 2,
+		canteen: 10,
+		regulation: 3,
+		trading: 6,
+		change: 6,
+		IS: 8,
+		retail: 5,
+		cleaning: 4,
+		"pissing about": 25,
+	};
+
+	let sum = 0;
+	for (let kollegen in staff) {
+		let staffJobMember = staff[kollegen];
+
+		if (boredomScoreByJob.hasOwnProperty(staffJobMember)) {
+			sum += boredomScoreByJob[staff[kollegen]];
+		}
+	}
+
+	if (sum <= 80) {
+		return "kill me now";
+	} else if (sum < 100 && sum > 80) {
+		return "i can handle this";
+	} else {
+		return "party time!!";
+	}
+}
