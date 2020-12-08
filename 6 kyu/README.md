@@ -325,3 +325,15 @@ function narcissistic(value) {
 	);
 }
 ```
+
+[Create Phone Number](https://www.codewars.com/kata/525f50e3b73515a6db000b83)
+
+```js
+function createPhoneNumber(numbers) {
+	let firstThree = numbers.slice(0, 3).join("");
+	let secondThreeNumbers = numbers.slice(3, 6).join("");
+	let lastDigits = numbers.slice(6).join("");
+
+	return `(${firstThree}) ${secondThreeNumbers}-${lastDigits}`;
+}
+```

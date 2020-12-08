@@ -275,3 +275,12 @@ function narcissistic(value) {
 			}, 0) == value
 	);
 }
+
+// Create Phone Number
+function createPhoneNumber(numbers) {
+	let firstThree = numbers.slice(0, 3).join("");
+	let secondThreeNumbers = numbers.slice(3, 6).join("");
+	let lastDigits = numbers.slice(6).join("");
+
+	return `(${firstThree}) ${secondThreeNumbers}-${lastDigits}`;
+}
