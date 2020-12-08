@@ -913,3 +913,22 @@ function checkAlive(health) {
 	}
 }
 ```
+
+[Sum of differences in array](https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e)
+
+```js
+function sumOfDifferences(arr) {
+	//sort
+	const sorted = arr.sort((el1, el2) => {
+		return el2 - el1;
+	});
+
+	// iterating
+	let result = 0;
+	for (let i = 0; i < sorted.length - 1; i++) {
+		console.log(sorted[i + 1]);
+		result += sorted[i] - sorted[i + 1];
+	}
+	return result;
+}
+```
