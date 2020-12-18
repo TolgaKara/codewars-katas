@@ -437,3 +437,12 @@ infected("01000000X000X011X0X")
 infected("01X000X010X011XX")
 infected("XXXXX")
 ````
+
+[Descending Order](https://www.codewars.com/kata/5467e4d82edf8bbf40000155)
+
+```js
+function descendingOrder(n) {
+	const numberArray = Array.from(String(n), Number);
+	return +numberArray.sort((a, b) => b - a).join("");
+}
+```

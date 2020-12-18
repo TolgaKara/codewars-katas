@@ -369,3 +369,9 @@ function infected(s) {
 infected("01000000X000X011X0X");
 infected("01X000X010X011XX");
 infected("XXXXX");
+
+// Descending Order
+function descendingOrder(n) {
+	const numberArray = Array.from(String(n), Number);
+	return +numberArray.sort((a, b) => b - a).join("");
+}
