@@ -710,3 +710,21 @@ function sumOfDifferences(arr) {
 function getASCII(c) {
 	return c.charCodeAt(0);
 }
+
+// Expressions Matter
+function expressionMatter(a, b, c) {
+	const add = (x, y) => x + y;
+	const multiply = (x, y) => x * y;
+
+	const solutions = [];
+
+	const fns = [add, multiply];
+	fns.forEach((fn1) => {
+		fns.forEach((fn2) => {
+			solutions.push(fn1(a, fn2(b, c)));
+			solutions.push(fn1(fn2(a, b), c));
+		});
+	});
+
+	return Math.max(...solutions);
+}
