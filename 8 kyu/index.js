@@ -740,3 +740,12 @@ function arrayPlusArray(arr1, arr2) {
 	const arr2Sum = arr2.reduce((acc, val) => acc + val);
 	return arr1Sum + arr2Sum;
 }
+
+// Reversed sequence
+const reverseSeq = (n) => {
+	const reversedArr = [];
+	for (let i = n; i > 0; i--) {
+		reversedArr.push(i);
+	}
+	return reversedArr;
+};

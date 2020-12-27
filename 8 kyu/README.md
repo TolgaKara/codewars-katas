@@ -979,3 +979,15 @@ function arrayPlusArray(arr1, arr2) {
 	return arr1Sum + arr2Sum;
 }
 ```
+
+[Reversed sequence](https://www.codewars.com/kata/5a00e05cc374cb34d100000d)
+
+```js
+const reverseSeq = (n) => {
+	const reversedArr = [];
+	for (let i = n; i > 0; i--) {
+		reversedArr.push(i);
+	}
+	return reversedArr;
+};
+```
