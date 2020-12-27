@@ -764,3 +764,8 @@ function booleanToString(b) {
 function betterThanAverage(classPoints, yourPoints) {
 	return classPoints.reduce((acc, val) => acc + val) / classPoints.length < yourPoints;
 }
+
+// MakeUpperCase
+function makeUpperCase(str) {
+	return str.toUpperCase();
+}

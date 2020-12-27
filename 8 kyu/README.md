@@ -1015,3 +1015,11 @@ function betterThanAverage(classPoints, yourPoints) {
 	return classPoints.reduce((acc, val) => acc + val) / classPoints.length < yourPoints;
 }
 ```
+
+[MakeUpperCase](https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7)
+
+```js
+function makeUpperCase(str) {
+	return str.toUpperCase();
+}
+```
