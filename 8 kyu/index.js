@@ -733,3 +733,10 @@ function expressionMatter(a, b, c) {
 function reverseWords(str) {
 	return str.split(" ").reverse().join(" ");
 }
+
+// Array plus array
+function arrayPlusArray(arr1, arr2) {
+	const arr1Sum = arr1.reduce((acc, val) => acc + val);
+	const arr2Sum = arr2.reduce((acc, val) => acc + val);
+	return arr1Sum + arr2Sum;
+}
