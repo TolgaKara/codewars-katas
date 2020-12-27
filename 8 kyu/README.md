@@ -1007,3 +1007,11 @@ function booleanToString(b) {
 	return "" + b;
 }
 ```
+
+[How good are you really?](https://www.codewars.com/kata/5601409514fc93442500010b)
+
+```js
+function betterThanAverage(classPoints, yourPoints) {
+	return classPoints.reduce((acc, val) => acc + val) / classPoints.length < yourPoints;
+}
+```

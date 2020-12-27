@@ -759,3 +759,8 @@ function hero(bullets, dragons) {
 function booleanToString(b) {
 	return "" + b;
 }
+
+// How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+	return classPoints.reduce((acc, val) => acc + val) / classPoints.length < yourPoints;
+}
