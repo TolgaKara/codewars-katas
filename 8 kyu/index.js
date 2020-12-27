@@ -754,3 +754,8 @@ const reverseSeq = (n) => {
 function hero(bullets, dragons) {
 	return dragons * 2 <= bullets;
 }
+
+// Convert a Boolean to a String
+function booleanToString(b) {
+	return "" + b;
+}

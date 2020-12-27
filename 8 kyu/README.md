@@ -999,3 +999,11 @@ function hero(bullets, dragons) {
 	return dragons * 2 <= bullets;
 }
 ```
+
+[Convert a Boolean to a String](https://www.codewars.com/kata/551b4501ac0447318f0009cd)
+
+```js
+function booleanToString(b) {
+	return "" + b;
+}
+```
