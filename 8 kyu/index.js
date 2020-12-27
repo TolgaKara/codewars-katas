@@ -728,3 +728,8 @@ function expressionMatter(a, b, c) {
 
 	return Math.max(...solutions);
 }
+
+// Reversed Words
+function reverseWords(str) {
+	return str.split(" ").reverse().join(" ");
+}

@@ -961,3 +961,11 @@ function expressionMatter(a, b, c) {
 	return Math.max(...solutions);
 }
 ```
+
+[Reversed Words](https://www.codewars.com/kata/51c8991dee245d7ddf00000e)
+
+```js
+function reverseWords(str) {
+	return str.split(" ").reverse().join(" ");
+}
+```
