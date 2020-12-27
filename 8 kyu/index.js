@@ -769,3 +769,6 @@ function betterThanAverage(classPoints, yourPoints) {
 function makeUpperCase(str) {
 	return str.toUpperCase();
 }
+
+// Function 2 - squaring an argument
+const square = (x) => x * x;
