@@ -2,21 +2,21 @@
 
 ```javascript
 function validParentheses(parens) {
-	let arr = []
+	let arr = [];
 	for (let i = 0; i < parens.length; i += 1) {
 		if (parens[i] === ")") {
 			if (arr.length <= 0) {
-				return false
+				return false;
 			} else {
-				arr.shift()
+				arr.shift();
 			}
 		}
 		if (parens[i] === "(") {
-			arr.push(")")
+			arr.push(")");
 		}
 	}
 
-	return arr.length ? false : true
+	return arr.length ? false : true;
 }
 ```
 
@@ -24,22 +24,41 @@ function validParentheses(parens) {
 
 ```js
 function cakes(recipe, available) {
-	let currentRecipe = Object.entries(recipe)
-	let storage = Object.entries(available)
-	let possibleCakes = []
-	let counter = 0
+	let currentRecipe = Object.entries(recipe);
+	let storage = Object.entries(available);
+	let possibleCakes = [];
+	let counter = 0;
 	for (let i = 0; i < currentRecipe.length; i++) {
 		for (let j = 0; j < storage.length; j++) {
 			if (storage[j][0].includes(currentRecipe[i][0]) === true) {
-				counter += 1
-				let newNumber = Math.floor(storage[j][1] / currentRecipe[i][1])
-				possibleCakes.push(newNumber)
+				counter += 1;
+				let newNumber = Math.floor(storage[j][1] / currentRecipe[i][1]);
+				possibleCakes.push(newNumber);
 			}
 		}
 	}
 	if (counter < currentRecipe.length) {
-		return 0
+		return 0;
 	}
-	return Math.min(...possibleCakes)
+	return Math.min(...possibleCakes);
 }
+```
+
+[Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0)
+
+```js
+var moveZeros = function (arr) {
+	const arrWithZeros = [];
+	const arrWithoutZeros = [];
+
+	arr.map((number) => {
+		if (number === 0) {
+			arrWithZeros.push(number);
+		} else {
+			arrWithoutZeros.push(number);
+		}
+	});
+
+	return arrWithoutZeros.concat(arrWithZeros);
+};
 ```
