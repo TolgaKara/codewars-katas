@@ -749,3 +749,8 @@ const reverseSeq = (n) => {
 	}
 	return reversedArr;
 };
+
+// Is he gonna survive?
+function hero(bullets, dragons) {
+	return dragons * 2 <= bullets;
+}

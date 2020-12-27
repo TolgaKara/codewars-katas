@@ -991,3 +991,11 @@ const reverseSeq = (n) => {
 	return reversedArr;
 };
 ```
+
+[Is he gonna survive?](https://www.codewars.com/kata/59ca8246d751df55cc00014c)
+
+```js
+function hero(bullets, dragons) {
+	return dragons * 2 <= bullets;
+}
+```
