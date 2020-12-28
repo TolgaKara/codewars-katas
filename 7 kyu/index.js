@@ -375,3 +375,22 @@ function descendingOrder(n) {
 	const numberArray = Array.from(String(n), Number);
 	return +numberArray.sort((a, b) => b - a).join("");
 }
+
+// Binary Addition
+function addBinary(a, b) {
+	const sum = a + b;
+	return numberToBinary(sum);
+}
+let numberToBinary = (sum) => {
+	if (sum === 0) {
+		return 0;
+	}
+
+	let binary = "";
+	while (sum > 0) {
+		const remainder = sum % 2;
+		binary = remainder + binary;
+		sum = Math.floor(sum / 2);
+	}
+	return binary;
+};

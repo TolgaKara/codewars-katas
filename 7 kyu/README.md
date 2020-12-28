@@ -446,3 +446,25 @@ function descendingOrder(n) {
 	return +numberArray.sort((a, b) => b - a).join("");
 }
 ```
+
+[Binary Addition](https://www.codewars.com/kata/551f37452ff852b7bd000139)
+
+```js
+function addBinary(a, b) {
+	const sum = a + b;
+	return numberToBinary(sum);
+}
+let numberToBinary = (sum) => {
+	if (sum === 0) {
+		return 0;
+	}
+
+	let binary = "";
+	while (sum > 0) {
+		const remainder = sum % 2;
+		binary = remainder + binary;
+		sum = Math.floor(sum / 2);
+	}
+	return binary;
+};
+```
