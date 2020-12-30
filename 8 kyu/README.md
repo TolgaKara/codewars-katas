@@ -1041,6 +1041,9 @@ class Kata {
 ```
 
 [Beginner - Reduce but Grow](https://www.codewars.com/kata/57f780909f7e8e3183000078)
+
+```js
 function grow(x){
 return x.reduce((acc,val) => acc \* val)
 }
+```
