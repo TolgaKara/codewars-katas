@@ -779,3 +779,8 @@ class Kata {
 		return length * width * height;
 	}
 }
+
+// Beginner - Reduce but Grow
+function grow(x) {
+	return x.reduce((acc, val) => acc * val);
+}
