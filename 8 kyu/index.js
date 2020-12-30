@@ -772,3 +772,10 @@ function makeUpperCase(str) {
 
 // Function 2 - squaring an argument
 const square = (x) => x * x;
+
+// Volume of a Cuboid
+class Kata {
+	static getVolumeOfCuboid(length, width, height) {
+		return length * width * height;
+	}
+}
