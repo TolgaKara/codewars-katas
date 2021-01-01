@@ -511,3 +511,14 @@ function capitalize(s) {
 	];
 }
 ```
+
+[Alternate case](https://www.codewars.com/kata/57a62154cf1fa5b25200031e)
+
+```js
+function alternateCase(s) {
+	return s
+		.split("")
+		.map((c) => (c !== c.toLowerCase() ? c.toLowerCase() : c.toUpperCase()))
+		.join("");
+}
+```

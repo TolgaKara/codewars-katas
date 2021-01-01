@@ -431,3 +431,11 @@ function capitalize(s) {
 			.join(""),
 	];
 }
+
+// Alternate case
+function alternateCase(s) {
+	return s
+		.split("")
+		.map((c) => (c !== c.toLowerCase() ? c.toLowerCase() : c.toUpperCase()))
+		.join("");
+}
