@@ -394,3 +394,14 @@ let numberToBinary = (sum) => {
 	}
 	return binary;
 };
+
+// Unique numbers
+function uniqueNumbers(numbersArray) {
+	uniqueArray = [];
+	numbersArray.map((val) => {
+		if (!uniqueArray.includes(val)) {
+			uniqueArray.push(val);
+		}
+	});
+	return uniqueArray;
+}

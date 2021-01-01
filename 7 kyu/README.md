@@ -468,3 +468,17 @@ let numberToBinary = (sum) => {
 	return binary;
 };
 ```
+
+[Unique numbers](https://www.codewars.com/kata/568f9bd9cbe89334c900000c)
+
+```js
+function uniqueNumbers(numbersArray) {
+	uniqueArray = [];
+	numbersArray.map((val) => {
+		if (!uniqueArray.includes(val)) {
+			uniqueArray.push(val);
+		}
+	});
+	return uniqueArray;
+}
+```
