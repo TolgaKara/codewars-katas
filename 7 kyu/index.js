@@ -439,3 +439,8 @@ function alternateCase(s) {
 		.map((c) => (c !== c.toLowerCase() ? c.toLowerCase() : c.toUpperCase()))
 		.join("");
 }
+
+// Remove duplicate words
+function removeDuplicateWords(s) {
+	return [...new Set(s.split(" "))].join(" ");
+}

@@ -522,3 +522,11 @@ function alternateCase(s) {
 		.join("");
 }
 ```
+
+[Remove duplicate words](https://www.codewars.com/kata/5b39e3772ae7545f650000fc)
+
+```js
+function removeDuplicateWords(s) {
+	return [...new Set(s.split(" "))].join(" ");
+}
+```
