@@ -405,3 +405,29 @@ function uniqueNumbers(numbersArray) {
 	});
 	return uniqueArray;
 }
+
+// Alternate capitalization
+function capitalize(s) {
+	return [
+		s
+			.split("")
+			.map((character, index) => {
+				if (index % 2 === 0) {
+					return character.toUpperCase();
+				} else {
+					return character.toLowerCase();
+				}
+			})
+			.join(""),
+		s
+			.split("")
+			.map((character, index) => {
+				if (index % 2 !== 0) {
+					return character.toUpperCase();
+				} else {
+					return character.toLowerCase();
+				}
+			})
+			.join(""),
+	];
+}

@@ -482,3 +482,32 @@ function uniqueNumbers(numbersArray) {
 	return uniqueArray;
 }
 ```
+
+[Alternate capitalization](https://www.codewars.com/kata/59cfc000aeb2844d16000075)
+
+```js
+function capitalize(s) {
+	return [
+		s
+			.split("")
+			.map((character, index) => {
+				if (index % 2 === 0) {
+					return character.toUpperCase();
+				} else {
+					return character.toLowerCase();
+				}
+			})
+			.join(""),
+		s
+			.split("")
+			.map((character, index) => {
+				if (index % 2 !== 0) {
+					return character.toUpperCase();
+				} else {
+					return character.toLowerCase();
+				}
+			})
+			.join(""),
+	];
+}
+```
