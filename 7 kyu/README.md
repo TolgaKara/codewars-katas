@@ -556,3 +556,11 @@ var number = function (array) {
 	return array.map((line, index) => `${index + 1}: ${line}`);
 };
 ```
+
+[Form The Minimum](https://www.codewars.com/kata/5ac6932b2f317b96980000ca)
+
+```js
+function minValue(values) {
+	return +[...new Set(values)].sort((a, b) => a - b).join("");
+}
+```

@@ -461,3 +461,8 @@ function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
 var number = function (array) {
 	return array.map((line, index) => `${index + 1}: ${line}`);
 };
+
+// Form The Minimum
+function minValue(values) {
+	return +[...new Set(values)].sort((a, b) => a - b).join("");
+}
