@@ -548,3 +548,11 @@ function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
 	return Math.floor(Math.sqrt(ages.map((age) => age * age).reduce((acc, val) => acc + val)) / 2);
 }
 ```
+
+[Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9)
+
+```js
+var number = function (array) {
+	return array.map((line, index) => `${index + 1}: ${line}`);
+};
+```
