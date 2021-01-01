@@ -530,3 +530,12 @@ function removeDuplicateWords(s) {
 	return [...new Set(s.split(" "))].join(" ");
 }
 ```
+
+[Greet Me](https://www.codewars.com/kata/535474308bb336c9980006f2)
+
+```js
+var greet = function (name) {
+	const properName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+	return `Hello ${properName}!`;
+};
+```
