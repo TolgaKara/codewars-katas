@@ -539,3 +539,12 @@ var greet = function (name) {
 	return `Hello ${properName}!`;
 };
 ```
+
+[Predict your age!](https://www.codewars.com/kata/5aff237c578a14752d0035ae)
+
+```js
+function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+	const ages = [age1, age2, age3, age4, age5, age6, age7, age8];
+	return Math.floor(Math.sqrt(ages.map((age) => age * age).reduce((acc, val) => acc + val)) / 2);
+}
+```
