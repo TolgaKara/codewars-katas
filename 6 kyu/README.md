@@ -337,3 +337,29 @@ function createPhoneNumber(numbers) {
 	return `(${firstThree}) ${secondThreeNumbers}-${lastDigits}`;
 }
 ```
+
+[Fat Fingers](https://www.codewars.com/kata/5aa99584fd5777ee9a0001f1)
+
+```js
+var fatFingers = function (str) {
+	if (!str) return str;
+
+	let isCaps = false;
+	let solution = str.split("").reduce((acc, character) => {
+		if (character.toUpperCase() === "A") {
+			isCaps = !isCaps;
+			return acc;
+		}
+
+		if (isCaps) {
+			character =
+				character === character.toUpperCase() ? character.toLowerCase() : character.toUpperCase();
+		}
+
+		acc += character;
+		return acc;
+	}, "");
+
+	return solution;
+};
+```
