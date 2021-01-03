@@ -54,3 +54,20 @@ var moveZeros = function (arr) {
 
 	return arrWithoutZeros.concat(arrWithZeros);
 };
+
+// Sum of pairs
+function sumPairs(ints, s) {
+	const hashInts = {};
+
+	const result = ints
+		.map((num) => {
+			if (s - num in hashInts) {
+				return [s - num, num];
+			} else {
+				hashInts[num] = true;
+			}
+		})
+		.filter((val) => val)[0];
+
+	return result || undefined;
+}

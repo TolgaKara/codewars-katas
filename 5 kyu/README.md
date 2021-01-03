@@ -62,3 +62,23 @@ var moveZeros = function (arr) {
 	return arrWithoutZeros.concat(arrWithZeros);
 };
 ```
+
+[Sum of pairs](https://www.codewars.com/kata/54d81488b981293527000c8f)
+
+```js
+function sumPairs(ints, s) {
+	const hashInts = {};
+
+	const result = ints
+		.map((num) => {
+			if (s - num in hashInts) {
+				return [s - num, num];
+			} else {
+				hashInts[num] = true;
+			}
+		})
+		.filter((val) => val)[0];
+
+	return result || undefined;
+}
+```
