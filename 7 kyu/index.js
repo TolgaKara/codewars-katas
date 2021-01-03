@@ -466,3 +466,22 @@ var number = function (array) {
 function minValue(values) {
 	return +[...new Set(values)].sort((a, b) => a - b).join("");
 }
+
+//Exes and Ohs
+function XO(str) {
+	str = str.toLowerCase().split("");
+	const resultCounts = str.reduce(
+		(counts, val) => {
+			if (val === "x") {
+				counts.countX++;
+			}
+			if (val === "o") {
+				counts.countO++;
+			}
+			return counts;
+		},
+		{ countX: 0, countO: 0 }
+	);
+	const { countX, countO } = resultCounts;
+	return countX === countO;
+}
