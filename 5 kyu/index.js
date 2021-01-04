@@ -71,3 +71,15 @@ function sumPairs(ints, s) {
 
 	return result || undefined;
 }
+
+// Simple Pig Latin
+function pigIt(str) {
+	const strArr = str.split(" ");
+
+	return strArr
+		.map((word) => {
+			if (word === "!" || word === "?" || word === ".") return word;
+			return word.slice(1) + word[0] + "ay";
+		})
+		.join(" ");
+}
