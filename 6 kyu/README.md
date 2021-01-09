@@ -363,3 +363,24 @@ var fatFingers = function (str) {
 	return solution;
 };
 ```
+
+[Take a Ten Minute Walk](https://www.codewars.com/kata/54da539698b8a2ad76000228)
+
+```js
+function isValidWalk(walk) {
+	if (walk.length != 10) return false;
+	const counts = {
+		n: 0,
+		e: 0,
+		s: 0,
+		w: 0,
+	};
+
+	for (let i = 0; i < walk.length; i++) {
+		const direction = walk[i];
+		counts[direction]++;
+	}
+
+	return counts.n - counts.s == 0 && counts.w - counts.e == 0;
+}
+```
