@@ -485,3 +485,16 @@ function XO(str) {
 	const { countX, countO } = resultCounts;
 	return countX === countO;
 }
+
+//Complementary DNA
+function DNAStrand(dna) {
+	return dna
+		.split("")
+		.map((letter) => {
+			if (letter === "A") return "T";
+			if (letter === "T") return "A";
+			if (letter === "G") return "C";
+			if (letter === "C") return "G";
+		})
+		.join("");
+}

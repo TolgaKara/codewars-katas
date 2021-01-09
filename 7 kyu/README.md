@@ -586,3 +586,19 @@ function XO(str) {
 	return countX === countO;
 }
 ```
+
+[Complementary DNA](https://www.codewars.com/kata/554e4a2f232cdd87d9000038)
+
+```js
+function DNAStrand(dna) {
+	return dna
+		.split("")
+		.map((letter) => {
+			if (letter === "A") return "T";
+			if (letter === "T") return "A";
+			if (letter === "G") return "C";
+			if (letter === "C") return "G";
+		})
+		.join("");
+}
+```
