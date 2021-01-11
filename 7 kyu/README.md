@@ -622,3 +622,12 @@ function sumTwoSmallestNumbers(numbers) {
 		.reduce((acc, val) => acc + val);
 }
 ```
+
+[Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1)
+
+```js
+function isIsogram(str) {
+	str = str.toLowerCase();
+	return [...new Set(str.split(""))].join("") === str;
+}
+```

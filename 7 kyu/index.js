@@ -512,3 +512,9 @@ function sumTwoSmallestNumbers(numbers) {
 		.slice(0, 2)
 		.reduce((acc, val) => acc + val);
 }
+
+// Isograms
+function isIsogram(str) {
+	str = str.toLowerCase();
+	return [...new Set(str.split(""))].join("") === str;
+}
