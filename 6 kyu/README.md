@@ -442,3 +442,28 @@ function findEvenIndex(arr) {
 	return -1;
 }
 ```
+
+[Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)
+
+```js
+function duplicateCount(text) {
+	text = text.toLowerCase().split("");
+	let counter = 0;
+	const occurences = {};
+	text.map((char) => {
+		occurences[char] = 0;
+	});
+
+	text.map((char) => {
+		occurences[char]++;
+	});
+
+	for (occur in occurences) {
+		let appearNumber = occurences[occur];
+		if (appearNumber > 1) {
+			counter++;
+		}
+	}
+	return counter;
+}
+```
