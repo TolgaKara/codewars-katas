@@ -355,3 +355,25 @@ function iqTest(numbers) {
 		return odd.lastIndex;
 	}
 }
+
+// Equal Sides Of An Array
+function findEvenIndex(arr) {
+	const sumSubArr = (arr, startIndex, lastIndex) => {
+		let sum = 0;
+		for (let i = startIndex; i < lastIndex; i++) {
+			sum += arr[i];
+		}
+		return sum;
+	};
+
+	for (let i = 0; i < arr.length; i++) {
+		const leftSum = sumSubArr(arr, 0, i);
+		const rightSum = sumSubArr(arr, i + 1, arr.length);
+
+		if (leftSum == rightSum) {
+			return i;
+		}
+	}
+
+	return -1;
+}
