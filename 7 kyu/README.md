@@ -611,3 +611,14 @@ function filter_list(l) {
 	return l.filter((item) => typeof item !== "string");
 }
 ```
+
+[Sum of two lowest positive integers](https://www.codewars.com/kata/558fc85d8fd1938afb000014)
+
+```js
+function sumTwoSmallestNumbers(numbers) {
+	return numbers
+		.sort((a, b) => a - b)
+		.slice(0, 2)
+		.reduce((acc, val) => acc + val);
+}
+```
