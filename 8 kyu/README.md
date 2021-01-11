@@ -1055,3 +1055,15 @@ function simpleMultiplication(number) {
 	return number % 2 === 0 ? number * 8 : number * 9;
 }
 ```
+
+[Power](https://www.codewars.com/kata/562926c855ca9fdc4800005b)
+
+```js
+function numberToPower(number, power) {
+	let pow = 1;
+	for (let i = 0; i < power; i++) {
+		pow *= number;
+	}
+	return pow;
+}
+```

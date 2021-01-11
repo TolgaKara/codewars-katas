@@ -790,3 +790,12 @@ function grow(x) {
 function simpleMultiplication(number) {
 	return number % 2 === 0 ? number * 8 : number * 9;
 }
+
+// Power
+function numberToPower(number, power) {
+	let pow = 1;
+	for (let i = 0; i < power; i++) {
+		pow *= number;
+	}
+	return pow;
+}
