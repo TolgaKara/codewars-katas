@@ -433,3 +433,14 @@ function isPangram(string) {
 	string = string.toLowerCase();
 	return alphabet.filter((val) => string.includes(val)).length === 26 ? true : false;
 }
+
+// Sum of Digits / Digital Root
+function digital_root(n) {
+	let numArr = ("" + n).split("");
+	let solInt = 0;
+	solInt = numArr.reduce((acc, val) => acc + +val, 0);
+	while (solInt >= 10) {
+		solInt = ("" + solInt).split("").reduce((acc, val) => acc + +val, 0);
+	}
+	return solInt;
+}
