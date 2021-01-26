@@ -518,3 +518,16 @@ function digital_root(n) {
 	return solInt;
 }
 ```
+
+[Is a number prime?](https://www.codewars.com/kata/5262119038c0985a5b00029f)
+
+```js
+function isPrime(n) {
+	if (n < 2) return false;
+
+	for (let i = 2; i <= Math.sqrt(n); i++) {
+		if (n % i === 0) return false;
+	}
+	return true;
+}
+```
