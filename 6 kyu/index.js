@@ -455,3 +455,17 @@ function isPrime(n) {
 	}
 	return true;
 }
+
+// Playing with digits
+
+function digPow(n, p) {
+	let newP = 0;
+	let result = ("" + n)
+		.split("")
+		.map((number, index) => {
+			newP = p + index;
+			return number ** newP;
+		})
+		.reduce((acc, num) => (acc += num));
+	return Number.isInteger(result / n) ? result / n : -1;
+}

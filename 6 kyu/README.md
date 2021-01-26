@@ -531,3 +531,19 @@ function isPrime(n) {
 	return true;
 }
 ```
+
+[Playing with digits](https://www.codewars.com/kata/5552101f47fc5178b1000050)
+
+```js
+function digPow(n, p) {
+	let newP = 0;
+	let result = ("" + n)
+		.split("")
+		.map((number, index) => {
+			newP = p + index;
+			return number ** newP;
+		})
+		.reduce((acc, num) => (acc += num));
+	return Number.isInteger(result / n) ? result / n : -1;
+}
+```
