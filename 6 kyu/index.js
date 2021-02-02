@@ -469,3 +469,40 @@ function digPow(n, p) {
 		.reduce((acc, num) => (acc += num));
 	return Number.isInteger(result / n) ? result / n : -1;
 }
+
+// Roman Numerals Encoder
+function solution(number) {
+	const romanObj = {
+		1: "I",
+		4: "IV",
+		5: "V",
+		9: "IX",
+		10: "X",
+		40: "XL",
+		50: "L",
+		90: "XC",
+		100: "C",
+		400: "CD",
+		500: "D",
+		600: "DC",
+		900: "CM",
+		1000: "M",
+	};
+
+	let roman = "";
+	const keys = Object.keys(romanObj);
+	while (number > 0) {
+		for (let i = keys.length - 1; i >= 0; i--) {
+			if (number >= keys[i]) {
+				while (number >= keys[i]) {
+					roman += romanObj[keys[i]];
+					number -= keys[i];
+				}
+				keys.pop();
+				break;
+			}
+		}
+	}
+
+	return roman;
+}
