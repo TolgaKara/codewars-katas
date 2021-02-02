@@ -631,3 +631,24 @@ function isIsogram(str) {
 	return [...new Set(str.split(""))].join("") === str;
 }
 ```
+
+[Palindrome chain length](https://www.codewars.com/kata/525f039017c7cd0e1a000a26)
+
+```js
+var palindromeChainLength = function (n) {
+	const reverse = (number) => +number.toString().split("").reverse().join("");
+
+	const isPalindrome = (number) => {
+		return number == reverse(number);
+	};
+
+	let count = 0;
+	let currentNum = n;
+
+	while (!isPalindrome(currentNum)) {
+		currentNum = reverse(currentNum) + currentNum;
+		count++;
+	}
+	return count;
+};
+```

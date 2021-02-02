@@ -518,3 +518,21 @@ function isIsogram(str) {
 	str = str.toLowerCase();
 	return [...new Set(str.split(""))].join("") === str;
 }
+
+// Palindrome chain length
+var palindromeChainLength = function (n) {
+	const reverse = (number) => +number.toString().split("").reverse().join("");
+
+	const isPalindrome = (number) => {
+		return number == reverse(number);
+	};
+
+	let count = 0;
+	let currentNum = n;
+
+	while (!isPalindrome(currentNum)) {
+		currentNum = reverse(currentNum) + currentNum;
+		count++;
+	}
+	return count;
+};
