@@ -506,3 +506,11 @@ function solution(number) {
 
 	return roman;
 }
+
+// Dubstep
+function songDecoder(song) {
+	return song
+		.split("WUB")
+		.filter((word) => word.trim())
+		.join(" ");
+}

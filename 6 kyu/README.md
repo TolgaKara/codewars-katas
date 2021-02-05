@@ -586,3 +586,14 @@ function solution(number) {
 	return roman;
 }
 ```
+
+[Dubstep](https://www.codewars.com/kata/551dc350bf4e526099000ae5)
+
+```js
+function songDecoder(song) {
+	return song
+		.split("WUB")
+		.filter((word) => word.trim())
+		.join(" ");
+}
+```
