@@ -597,3 +597,32 @@ function songDecoder(song) {
 		.join(" ");
 }
 ```
+
+[Reverse polish notation calculator](https://www.codewars.com/kata/52f78966747862fc9a0009ae)
+
+```js
+function calc(expr) {
+	const inputArr = expr.split(" ");
+	const stack = [];
+
+	const operations = {
+		"+": (a, b) => a + b,
+		"-": (a, b) => a - b,
+		"*": (a, b) => a * b,
+		"/": (a, b) => a / b,
+	};
+
+	for (let i = 0; i < inputArr.length; i++) {
+		const token = inputArr[i];
+		if (operations[token]) {
+			const rightVal = stack.pop();
+			const leftVal = stack.pop();
+			const result = operations[token](+leftVal, +rightVal);
+			stack.push(result);
+		} else {
+			stack.push(token);
+		}
+	}
+	return +stack.pop();
+}
+```

@@ -514,3 +514,29 @@ function songDecoder(song) {
 		.filter((word) => word.trim())
 		.join(" ");
 }
+
+// Reverse polish notation calculator
+function calc(expr) {
+	const inputArr = expr.split(" ");
+	const stack = [];
+
+	const operations = {
+		"+": (a, b) => a + b,
+		"-": (a, b) => a - b,
+		"*": (a, b) => a * b,
+		"/": (a, b) => a / b,
+	};
+
+	for (let i = 0; i < inputArr.length; i++) {
+		const token = inputArr[i];
+		if (operations[token]) {
+			const rightVal = stack.pop();
+			const leftVal = stack.pop();
+			const result = operations[token](+leftVal, +rightVal);
+			stack.push(result);
+		} else {
+			stack.push(token);
+		}
+	}
+	return +stack.pop();
+}
