@@ -83,3 +83,20 @@ function pigIt(str) {
 		})
 		.join(" ");
 }
+
+// Calculating with Functions
+const zero = (mathOperation) => (!mathOperation ? 0 : mathOperation(0));
+const one = (mathOperation) => (!mathOperation ? 1 : mathOperation(1));
+const two = (mathOperation) => (!mathOperation ? 2 : mathOperation(2));
+const three = (mathOperation) => (!mathOperation ? 3 : mathOperation(3));
+const four = (mathOperation) => (!mathOperation ? 4 : mathOperation(4));
+const five = (mathOperation) => (!mathOperation ? 5 : mathOperation(5));
+const six = (mathOperation) => (!mathOperation ? 6 : mathOperation(6));
+const seven = (mathOperation) => (!mathOperation ? 7 : mathOperation(7));
+const eight = (mathOperation) => (!mathOperation ? 8 : mathOperation(8));
+const nine = (mathOperation) => (!mathOperation ? 9 : mathOperation(9));
+
+const plus = (number) => (secNumber) => secNumber + number;
+const minus = (number) => (secNumber) => secNumber - number;
+const times = (number) => (secNumber) => secNumber * number;
+const dividedBy = (number) => (secNumber) => Math.floor(secNumber / number);
