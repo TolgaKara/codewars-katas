@@ -807,3 +807,6 @@ var quote = function (fighter) {
 		? "I am not impressed by your performance."
 		: "I'd like to take this chance to apologize.. To absolutely NOBODY!";
 };
+
+// Incorrect division method
+const solve = (x, y) => x / y;

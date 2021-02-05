@@ -1077,3 +1077,9 @@ var quote = function (fighter) {
 		: "I'd like to take this chance to apologize.. To absolutely NOBODY!";
 };
 ```
+
+[Incorrect division method](https://www.codewars.com/kata/54d1c59aba326343c80000e7)
+
+```js
+const solve = (x, y) => x / y;
+```
