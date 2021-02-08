@@ -676,3 +676,13 @@ function getSum(a, b) {
 	return sum;
 }
 ```
+
+[Categorize New Member](https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa)
+
+```js
+function openOrSenior(data) {
+	return data.map((a) => {
+		return a[0] >= 55 && a[1] > 7 ? "Senior" : "Open";
+	});
+}
+```

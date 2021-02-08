@@ -557,3 +557,10 @@ function getSum(a, b) {
 
 	return sum;
 }
+
+// Categorize New Member
+function openOrSenior(data) {
+	return data.map((a) => {
+		return a[0] >= 55 && a[1] > 7 ? "Senior" : "Open";
+	});
+}
