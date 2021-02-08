@@ -117,3 +117,33 @@ const minus = (number) => (secNumber) => secNumber - number;
 const times = (number) => (secNumber) => secNumber * number;
 const dividedBy = (number) => (secNumber) => Math.floor(secNumber / number);
 ```
+
+[Where my anagrams at?](https://www.codewars.com/kata/523a86aa4230ebb5420001e1)
+
+```js
+const countLetters = (word) =>
+	Array.prototype.reduce.call(
+		word,
+		(counts, letter) => {
+			letter = letter.toLowerCase();
+			counts[letter] = counts[letter] || 0;
+			counts[letter]++;
+			return counts;
+		},
+		{}
+	);
+
+const looseEqual = (obj1, obj2) => {
+	const obj1Keys = Object.keys(obj1);
+	const obj2Keys = Object.keys(obj2);
+	if (obj1Keys.length != obj2Keys.length) {
+		return false;
+	}
+	return obj1Keys.every((key) => obj1[key] === obj2[key]);
+};
+
+function anagrams(word, words) {
+	const letterCount = countLetters(word);
+	return words.filter((currentWord) => looseEqual(letterCount, countLetters(currentWord)));
+}
+```
